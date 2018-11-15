@@ -7,7 +7,7 @@
     "stage2": "webpack --config public/webpack/web.stage2.config.js --progress --colors",
     "stage3": "webpack --config public/webpack/web.stage3.config.js --progress --colors",
     "preprod": "webpack --config public/webpack/web.preprod.config.js --progress --colors",
-    "prod": "webpack --config public/webpack/web.prod.config.js --progress --colors",
+    "production": "webpack --config public/webpack/web.prod.config.js --progress --colors",
     "dev": "webpack --config public/webpack/web.dev.config.js --progress --colors",
     "start": "webpack-dev-server --content-base public/ --config public/webpack/web.dev.config.js --port 8001 --host 0.0.0.0 --inline --hot --colors",
     "web-bundle": "webpack --config public/webpack/web.prod.config.js --progress --colors"

@@ -1,7 +1,18 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin= require('extract-text-webpack-plugin');
-const VENDOR_LIBS=['react','react-dom','react-redux','react-router-dom','redux','redux-thunk','react-id-swiper','axios','prop-types','vis-react'];
+const VENDOR_LIBS=[
+  'react',
+  'react-dom',
+  'react-redux',
+  'react-router-dom',
+  'redux',
+  'redux-thunk',
+  'react-id-swiper',
+  'axios',
+  'prop-types',
+  'vis-react'
+];
 
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -42,15 +53,14 @@ module.exports = {
         test: /\.(png|woff|woff2|eot|ttf|jpg|svg|json|otf|gif)$/,
         use:[{
           loader: 'url-loader?limit=8192' }]
-      },
-      {
+      },{
         test: /\.json$/,
         use:[{
           loader: "json-loader",}]
       },{
         test: /\.js$/,
         exclude: /node_modules/,
-            use: {
+        use: {
           loader: 'babel-loader',
           options: {
             presets: ['es2015', 'react', "stage-0"],
