@@ -21,10 +21,3 @@ export function isProjectChanged(object) {
     dispatch(createActionWithTypeAndPayload(IS_PROJECT_CHANGED, object));
   };
 }
-
-
-
-
-
-
-
