@@ -29,13 +29,4 @@ Root.propTypes = {
   store: PropTypes.object
 };
 
-// function mapStateToProps(state) {
-//   return {
-//     state
-//   };
-// }
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ }, dispatch);
-// }
-
 export default Root;
