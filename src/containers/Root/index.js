@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import PropTypes from "prop-types";
 import Router from "../../components/Router";
 import { BrowserRouter, Route, Link } from "react-router-dom";
