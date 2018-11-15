@@ -7,7 +7,6 @@ const ExtractTextPlugin= require('extract-text-webpack-plugin');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 let root_path = process.cwd() + "/";
 let cloud_url = 'https://d13l3vrk0vhr9w.cloudfront.net';
 
@@ -21,7 +20,7 @@ module.exports = webpackMerge(commonConfig, {
           {
             loader:'css-loader',
             options:{
-              root: 'https://d13l3vrk0vhr9w.cloudfront.net',
+              root: 'js/',
               minimize: true
             }
           },
@@ -33,15 +32,15 @@ module.exports = webpackMerge(commonConfig, {
      ]
     },
     output: {
-      path: path.join(root_path, 'dist/prod'),
-      publicPath: 'https://d13l3vrk0vhr9w.cloudfront.net',
+      path: path.join(root_path, 'dist/js'),
+      publicPath: 'js/',
       filename: '[name].[hash].js',
       // chunkFilename: '[id].[hash].chunk.js'
     },
     plugins: [
       new webpack.DefinePlugin({
         'image_path': function(path){
-          return  'https://d13l3vrk0vhr9w.cloudfront.net/images' + path;
+          return  'images' + path;
         },
         'process.env': {
           NODE_ENV: JSON.stringify('production'),

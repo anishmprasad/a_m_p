@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin= require('extract-text-webpack-plugin');
 const VENDOR_LIBS=['react','react-dom','react-redux','react-router-dom','redux','redux-thunk','react-id-swiper','axios','prop-types','vis-react'];
 
-let BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let root_path = process.cwd() + "/";
@@ -17,34 +16,14 @@ module.exports = {
    alias: {
      styles: path.join(root_path,'assets/stylesheet'),
      containers: path.join(root_path,'src/containers'),
-     searchContainers: path.join(root_path,'src/containers/search'),
-     learnContainers: path.join(root_path,'src/containers/study/learn'),
      commonContainers: path.join(root_path,'src/containers/common'),
-     studyContainers: path.join(root_path,'src/containers/study'),
-     practiceContainers: path.join(root_path,'src/containers/practice'),
-
 
      components: path.join(root_path,'src/components'),
-     headerComponents: path.join(root_path,'src/components/header'),
-     searchComponents: path.join(root_path,'src/components/search'),
      commonComponents: path.join(root_path,'src/components/common'),
-     studyComponents: path.join(root_path,'src/components/study'),
-     learnComponents: path.join(root_path,'src/components/study/learn'),
-     PracticeComponents: path.join(root_path,'src/components/practice'),
 
-
-     styleee: path.join(root_path,'assets/stylesheet/search'),
-     styleLibrary: path.join(root_path,'assets/stylesheet/lib'),
      styleCommon: path.join(root_path,'assets/stylesheet/common'),
-     styleLearn: path.join(root_path,'assets/stylesheet/study/learn'),
-     stylePractice: path.join(root_path,'assets/stylesheet/practice'),
 
-
-     learnActions:path.join(root_path,'src/actions/study/learn'),
      commonActions:path.join(root_path,'src/actions/common'),
-     searchResultActions:path.join(root_path,'src/actions/searchResults'),
-     studyActions:path.join(root_path,'src/actions/study'),
-     userAuthActions:path.join(root_path,'src/actions/userAuth'),
 
      learnReducers:path.join(root_path,'src/reducers/study/learn'),
 

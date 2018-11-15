@@ -4,10 +4,8 @@ var webpackMerge = require('webpack-merge');
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin= require('extract-text-webpack-plugin');
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 let root_path = process.cwd() + "/";
 let cloud_url = "https://da27b9qnon3yn.cloudfront.net";
 
