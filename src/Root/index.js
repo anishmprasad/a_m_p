@@ -13,11 +13,9 @@ class Root extends Component {
   render() {
     return (
       <Provider store={this.props.store}>
-        {
           <BrowserRouter>
             <Route path="/" component={Router} />
           </BrowserRouter>
-        }
       </Provider>
     );
   }
