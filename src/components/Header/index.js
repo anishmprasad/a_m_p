@@ -1,14 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './index.scss'
 
-export default function Header(props) {
+export default function Header(params) {
   return(
-    <div className="Header">
+    <div className="header">
     </div>
   )
-}
-
-Header.propTypes = {
-
 }

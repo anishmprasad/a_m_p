@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.scss'
-export default function Home(params) {
+
+export default function Home(props) {
   return(
     <div className="home">
-      Hello !
+      Hello Anish !
     </div>
   )
 }
