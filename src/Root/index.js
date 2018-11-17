@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import PropTypes from "prop-types";
 import Router from "../Router";
 import { BrowserRouter, Route } from "react-router-dom";
+import './root.scss'
 class Root extends Component {
   constructor(props) {
     super(props);
