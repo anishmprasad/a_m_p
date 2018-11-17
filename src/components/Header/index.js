@@ -1,8 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
+import './index.scss'
 
-export default function Header(params) {
-  return(
-    <div className="header">
-    </div>
-  )
+export default class Header extends Component{
+  componentDidMount(){
+    
+  }
+  render(){
+    return(
+      <div className="header">
+
+      </div>
+    )
+  }
 }
