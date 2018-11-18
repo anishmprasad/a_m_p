@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-// import canvas from './graph'
+import Header from './Header'
 
 
 const rootReducer = combineReducers({
-  
+  Header
 });
 
 export default rootReducer;

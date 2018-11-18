@@ -3,7 +3,7 @@ import './index.scss'
 export default function Home(params) {
   return(
     <div className="home">
-      Hello !
+      content
     </div>
   )
 }

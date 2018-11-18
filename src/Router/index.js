@@ -1,22 +1,35 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
-// import 'styleCommon/styles.scss';
-// import DynamicRoute from 'components/DynamicRoute';
-// import HelloWorld from 'components/HelloWorld'
-// import Graph from '../Graph';
-import Home from '../components/Home'
-import Header from '../components/Header'
-import About from '../components/About';
 
+// import Home from '../components/Home'
+// import Header from '../components/Header'
+// import About from '../components/About';
+import './index.scss'
+
+const OpenSource = lazy(() => import('../components/OpenSource'));
+const Home = lazy(() => import('../components/Home'));
+const About = lazy(() => import('../components/About'));
+const Header = lazy(() => import('../components/Header'));
 
 
 export default function Router(props) {
-  return <Fragment>
-      <Header />
+  return (
+    <div className="wrapper">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+      </Suspense>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Route exact path='/' component={Home} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Route exact path='/opensource' component={OpenSource} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Route exact path='/about' component={About} />
+        </Suspense>
       </Switch>
-    </Fragment>;
+    </div>
+  )
 }
 
