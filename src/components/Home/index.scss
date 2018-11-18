@@ -1,11 +1,179 @@
 @import "../../utils/scss/theme.scss";
-@import "../../utils/scss/theme.scss";
 
 .home{
-    color:VeryDarkDesaturatedBlue;
+    color:$VeryDarkDesaturatedBlue;
     font-size: 30px;
     text-align: center;
+    background-color: $GrayishCyan;
     // position: absolute;
     // top: 45%;
     // right: 45%;
+}
+    // body {
+    //     background: #35483e;
+    //     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/494458/bg.jpg);
+    //     background-size: cover;
+    //     font-family: Arial;
+    // }
+    // svg {
+    //     display: block;
+    //     font: 8em 'Oswald';
+    //     width: 960px;
+    //     height: 300px;
+    //     margin: 0 auto;
+    // }
+    // .text-copy {
+    //     fill: none;
+    //     stroke: white;
+    //     stroke-dasharray: 6% 29%;
+    //     stroke-width: 5px;
+    //     stroke-dashoffset: 0%;
+    //     animation: stroke-offset 5s infinite linear;
+    // }
+    // .text-copy:nth-child(1) {
+    //     stroke: #5c0404;
+    //     animation-delay: -1s;
+    // }
+    // .text-copy:nth-child(2) {
+    //     stroke: #d6801c;
+    //     animation-delay: -2s;
+    // }
+    // .text-copy:nth-child(3) {
+    //     stroke: #E7D84B;
+    //     animation-delay: -3s;
+    // }
+    // .text-copy:nth-child(4) {
+    //     stroke: #ffff9e;
+    //     animation-delay: -4s;
+    // }
+    // .text-copy:nth-child(5) {
+    //     stroke: #55981b;
+    //     animation-delay: -5s;
+    // }
+    // @keyframes stroke-offset {
+    //     100% { stroke-dashoffset: -35%;}
+    // }
+
+    // .content {
+    //     width: 310px;
+    //     font-size: 36px;
+    //     line-height: 40px;
+    //     color: #ecf0f1;
+    //     margin: 1em auto 0;
+    // }
+    // .static {
+    //     float: left;
+    //     overflow: hidden;
+    //     height: 40px;
+    // }
+    // p {
+    //     display: inline;
+    //     float: left;
+    //     margin: 0;
+    //     color: #ffff9e;
+    // }
+    // ul {
+    //     margin-top: 0;
+    //     padding-left: 130px;
+    //     text-align: left;
+    //     list-style: none;
+    //     animation: 6s linear 0s normal none infinite change;
+    // }
+    // ul li {
+    //     color: #E7D84B;
+    //     line-height: 40px;
+    //     margin: 0;
+    // }
+    // @keyframes change {
+    //     0% { margin-top: 0; }
+    //     15% { margin-top: 0; }
+    //     25% { margin-top: -40px; }
+    //     40% { margin-top: -40px; }
+    //     50% { margin-top: -80px; }
+    //     65% { margin-top: -80px; }
+    //     75% { margin-top: -40px; }
+    //     85% { margin-top: -40px; }
+    //     100% { margin-top: 0; }
+    // }
+
+    // .wrapper{
+    //     clear:both;
+    //     width: 400px;
+    //     margin: 0.5em auto;
+    // }
+    // .clip-text{
+    //     margin-top: 4em;
+    //     padding: 0.3em;
+    //     font-size: 3em;
+    //     font-family: 'Oswald';
+    //     text-align: center;
+    //     position: relative;
+    //     display: block;
+    //     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/494458/text-bg.jpg);
+    //     background-position: bottom;
+    //     background-size: cover;
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //     transition: 2s ease all;
+    // }
+    // .clip-text:hover, .clip-text:hover::before {
+    //     background-position:top;
+    // }
+    // .clip-text:before, .clip-text:after {
+    //     position: absolute;
+    //     content: '';
+    // }
+    // .clip-text:before {
+    //     z-index: -2;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-image: inherit;
+    //     background-position: bottom;
+    //     background-size: cover;
+    //     transition: 2s ease all;
+    // }
+    // .clip-text:after {
+    //     position: absolute;
+    //     z-index: -1;
+    //     top: .125em;
+    //     right: .125em;
+    //     bottom: .125em;
+    //     left: .125em;
+    //     background-color: rgba(214, 128, 28, 0.9);
+    // }
+
+
+//     @import url(https://fonts.googleapis.com/css?family=Khula:700);
+// body {
+//   background: #111;
+// }
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+    display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  *{
+      transition: none;
+  }
 }
