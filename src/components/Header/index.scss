@@ -11,7 +11,7 @@
     transition: all 1s linear;
   }
 }
-.notloading{
+.logo{
   transform: translate(80%, 80%);
   -webkit-transform: translate(80%, 80%);
   -moz-transform: translate(0, 0);
@@ -20,6 +20,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  color:$VeryDarkDesaturatedBlue;
 }
 .loading {
   // position: fixed;
@@ -45,7 +46,7 @@
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-size: 30px;
-    color: #000;
+    color: $MostlyDesaturatedDarkBlue;
     /* padding: 5px; */
     z-index: 100;
     position: fixed;
