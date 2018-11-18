@@ -54,7 +54,7 @@ class Header extends Component{
     // )
     return <div className={`header`}>
         {<div
-            className={`${this.state.isLoading ? 'loading' : 'notloading'}`}
+            className={`${this.state.isLoading ? 'loading' : 'logo'}`}
           >
             {`${this.state.isLoading ? 'loading' : 'A + P'}`}
           </div>}
