@@ -17,14 +17,51 @@ class Header extends Component{
     })
   }
   render(){
+    // return(
+    //     <div className={`container ${!this.state.isLoading ? 'loaded' : ''}`}>
+    //     <div className="bg-img"></div>
+    //     <div className="header">
+    //         <div className="loading">
+    //             <div className="block"></div>
+    //             <div className="block"></div>
+    //             <div className="block"></div>
+    //             <div className="block"></div>
+    //         </div>
+    //         <h1>Go!</h1>
+    //     </div>
+    //     <div className="main">
+    //         <div className="login">
+    //             <form>
+    //                 <input id="username" name="username" required="required" type="text" placeholder="Username" />
+    //                 <input id="password" name="password" required="required" type="password" placeholder="Password" />
+    //                 <button type="submit" value="Login">Login</button>
+    //                 <span className="form-toggle">Not Registered Yet?</span>
+    //             </form>
+    //         </div>
+    //         <div className="register">
+    //             <form>
+    //                 <input id="firstname" name="firstname" required="required" type="text" placeholder="First name" />
+    //                 <input id="lastname" name="lastname" required="required" type="text" placeholder="Last name" />
+    //                 <input id="email" name="email" required="required" type="enail" placeholder="Email" />
+    //                 <input id="username" name="username" required="required" type="text" placeholder="Username" />
+    //                 <input id="password" name="password" required="required" type="password" placeholder="Password" />
+    //                 <button type="submit" value="Login">Register</button>
+    //                 <span className="form-toggle">Return to Login</span>
+    //             </form>
+    //         </div>
+    //     </div>
+    // </div>
+    // )
     return <div className={`header`}>
         {<div
             className={`${this.state.isLoading ? 'loading' : 'notloading'}`}
           >
-            {`${this.state.isLoading ? 'loading' : 'Anish'}`}
+            {`${this.state.isLoading ? 'loading' : 'A + P'}`}
           </div>}
         {/* {!this.state.isLoading && */}
-          <CSSTransition
+            <Nav />
+
+          {/* <CSSTransition
             in={!this.state.isLoading}
             timeout={500}
             classNames="message"
@@ -34,9 +71,10 @@ class Header extends Component{
             }}
           >
             <Nav />
-          </CSSTransition>
+          </CSSTransition> */}
           {/* // } */}
       </div>; 
+
   }
 }
 function mapDispatchToProps(dispatch) {
