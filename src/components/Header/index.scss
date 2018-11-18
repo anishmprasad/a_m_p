@@ -1,13 +1,14 @@
+@import "../../utils/scss/theme.scss";
 .header{
   // text-align: center;
   font-size: 20px;
-  background-color: lightgray;
+  background-color:$LightGrayishCyanLimeGreen;
   padding: 20px 40px;
   *{
-      -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
   }
 }
 .notloading{
