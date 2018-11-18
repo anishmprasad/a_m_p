@@ -7,16 +7,18 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../components/Home'
 import Header from '../components/Header'
 import About from '../components/About';
-
-
+import { CSSTransition } from 'react-transition-group';
+import './index.scss'
 
 export default function Router(props) {
-  return <Fragment>
+  return (
+    <Fragment>
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
       </Switch>
-    </Fragment>;
+    </Fragment>
+  )
 }
 
