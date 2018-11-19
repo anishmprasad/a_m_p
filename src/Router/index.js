@@ -15,10 +15,8 @@ const Header = lazy(() => import('../components/Header'));
 export default function Router() {
   return (
     <div className='wrapper'>
-      <Suspense fallback={<div className='header'>Loading...</div>}>
+      <Suspense fallback={<div className='suspense'>Loading...</div>}>
         <Header />
-      </Suspense>
-      <Suspense fallback={<div className='home'>Loading...</div>}>
         <Switch>
           <Route exact path='/' render={() => <Home />} />
           <Route exact path='/opensource' render={() => <OpenSource />} />
