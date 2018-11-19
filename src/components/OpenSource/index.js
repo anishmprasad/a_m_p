@@ -7,7 +7,6 @@ import { fetchOpenSource } from '../../actions/OpenSource'
 class OpenSource extends Component {
   constructor(props){
     super(props)
-    debugger
   }
   componentDidMount(){
     this.props.fetchOpenSource(2)
