@@ -7,8 +7,8 @@ $device-medium-small: "screen and ( max-width: 1023px)";
 $device-large:"screen and (min-width: 1024px)";
 
 // fonts
-$font-serif: "Verdana",sans-serif;
-$font-sans-serif: "Helvetica Neue", sans-serif;
+// $font-serif: "Verdana",sans-serif;
+// $font-sans-serif: "Helvetica Neue", sans-serif;
 
 // colors
 $dark: black;
@@ -37,24 +37,6 @@ $box: 75%;
     margin: 0 auto;
 }
 
-// html,
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// html {
-//   // font-size: 18px;
-//   font-family: $font-sans-serif;
-//   color: $dark;
-//   font-style: normal;
-//   text-rendering: optimizeLegibility;
-//   line-height: normal;
-// }
-
-// body {
-//   background-color: $site-bg;
-// }
 
 img {
     display: block;
