@@ -1,6 +1,20 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+import { fetchOpenSource } from '../../actions/OpenSource'
 
 class OpenSource extends Component {
+  constructor(props){
+    super(props)
+    debugger
+  }
+  componentDidMount(){
+    this.props.fetchOpenSource(2)
+    .then(response => {
+      console.log('fetchOpenSource',response);
+    })
+  }
   render(){
     return(
       <div className="opensource">
@@ -9,4 +23,11 @@ class OpenSource extends Component {
     )
   }
 }
-export default OpenSource;
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchOpenSource }, dispatch);
+}
+export default connect(
+  null,
+  mapDispatchToProps
+)(OpenSource);

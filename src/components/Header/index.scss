@@ -5,10 +5,10 @@
   background-color:$LightGrayishCyanLimeGreen;
   padding: 20px 40px;
   *{
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
   }
 }
 .logo{
