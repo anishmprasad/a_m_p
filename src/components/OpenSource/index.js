@@ -5,9 +5,6 @@ import { connect } from 'react-redux';
 import { fetchOpenSource } from '../../actions/OpenSource'
 
 class OpenSource extends Component {
-  constructor(props){
-    super(props)
-  }
   componentDidMount(){
     this.props.fetchOpenSource(2)
     .then(response => {
