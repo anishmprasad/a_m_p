@@ -21,7 +21,11 @@ class OpenSource extends Component {
     return(
       <article className="card cols-3" key={`project-${index}`}>
         <a href={project.url} id="b36828271" target="_blank">
-              <img src="https://mir-s3-cdn-cf.behance.net/projects/404/fefe0336828271.Y3JvcCwxMzE0LDEwMjgsMTg1LDMy.jpg" alt="LaunchPad" />
+              <img 
+                src="https://mir-s3-cdn-cf.behance.net/projects/404/fefe0336828271.Y3JvcCwxMzE0LDEwMjgsMTg1LDMy.jpg" 
+                alt="LaunchPad" 
+                rel="noopener"
+              />
               <div className="content">
                   <h3>LaunchPad</h3>
                   <small>

@@ -6,6 +6,10 @@ import Nav from '../Nav'
 import { CSSTransition } from 'react-transition-group';
 import './index.scss'
 
+import logo from 'images/logo.svg'
+
+console.log(logo)
+
 class Header extends Component{
   state = {
     isLoading : true
@@ -56,7 +60,8 @@ class Header extends Component{
         {<div
             className={`${this.state.isLoading ? 'loading' : 'logo'}`}
           >
-            {`${this.state.isLoading ? 'loading' : 'A + P'}`}
+            {/* <img src={logo} alt="logo" />  */}
+            {/* {`${!this.state.isLoading ? <img src={logo} alt="logo" /> : 'A + P'}`} */}
           </div>}
         {/* {!this.state.isLoading && */}
             <Nav />
