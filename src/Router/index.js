@@ -1,34 +1,30 @@
 import React, { Fragment, lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+// import OpenSource from '../components/OpenSource'
 // import Home from '../components/Home'
 // import Header from '../components/Header'
 // import About from '../components/About';
-import './index.scss'
+import './index.scss';
 
 const OpenSource = lazy(() => import('../components/OpenSource'));
 const Home = lazy(() => import('../components/Home'));
 const About = lazy(() => import('../components/About'));
 const Header = lazy(() => import('../components/Header'));
 
-
-export default function Router(props) {
+export default function Router() {
   return (
-    <div className="wrapper">
-      <Suspense fallback={<div>Loading...</div>}>
+    <div className='wrapper'>
+      <Suspense fallback={<div className='header'>Loading...</div>}>
         <Header />
       </Suspense>
-      <Switch>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Route exact path='/' component={Home} />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Route exact path='/opensource' component={OpenSource} />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Route exact path='/about' component={About} />
-        </Suspense>
-      </Switch>
+      <Suspense fallback={<div className='home'>Loading...</div>}>
+        <Switch>
+          <Route exact path='/' render={() => <Home />} />
+          <Route exact path='/opensource' render={() => <OpenSource />} />
+          <Route exact path='/about' render={() => <About />} />
+        </Switch>
+      </Suspense>
     </div>
   )
 }
