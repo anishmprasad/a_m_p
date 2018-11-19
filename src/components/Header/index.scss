@@ -1,9 +1,12 @@
 @import "../../utils/scss/theme.scss";
 .header{
-  // text-align: center;
+  // background-color:$LightGrayishCyanLimeGreen;
   font-size: 20px;
-  background-color:$LightGrayishCyanLimeGreen;
-  padding: 20px 40px;
+    padding: 20px 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
   *{
     -webkit-transition: all .5s linear;
     -moz-transition: all .5s linear;
@@ -12,8 +15,8 @@
   }
 }
 .logo{
-  transform: translate(80%, 80%);
-  -webkit-transform: translate(80%, 80%);
+  transform: translate(110%, 50%);
+  -webkit-transform: translate(110%, 50%);
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -22,6 +25,11 @@
   left: 0;
   color:$VeryDarkDesaturatedBlue;
   background: transparent;
+  z-index: 10;
+      background-image: url('~images/logo.svg');
+    background-repeat: no-repeat;
+           width: 40px;
+    height: 40px;
 }
 .loading {
   // position: fixed;
@@ -60,6 +68,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('~images/logo.svg');
+    background-repeat: no-repeat;
+        width: 80px;
+    height: 80px;
 }
 .message-enter {
   opacity: 0.01;
