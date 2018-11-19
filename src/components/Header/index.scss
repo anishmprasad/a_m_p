@@ -15,14 +15,14 @@
   }
 }
 .logo{
-  transform: translate(110%, 50%);
-  -webkit-transform: translate(110%, 50%);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
+  // transform: translate(110%, 50%);
+  // -webkit-transform: translate(110%, 50%);
+  // -moz-transform: translate(0, 0);
+  // -o-transform: translate(0, 0);
+  // -ms-transform: translate(0, 0);
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 40px;
   color:$VeryDarkDesaturatedBlue;
   background: transparent;
   z-index: 10;
@@ -30,6 +30,7 @@
     background-repeat: no-repeat;
            width: 40px;
     height: 40px;
+    background-size: 30px 40px;
 }
 .loading {
   // position: fixed;
@@ -46,32 +47,65 @@
   // padding: 5px;
   // z-index: 100;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // font-size: 30px;
+    // color: $MostlyDesaturatedDarkBlue;
+    // /* padding: 5px; */
+    // z-index: 100;
+    // position: fixed;
+    // /* top: 0; */
+    // /* left: 0; */
+    // height: 100%;
+    // width: 100%;
+    // z-index: 10;
+    // background-color: rgb(255, 255, 255);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-image: url('~images/logo.svg');
+    // background-repeat: no-repeat;
+    //     width: 80px;
+    // height: 80px;
+
+
+
+
+
+        position: fixed;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* -webkit-transform: translate(-50%, -50%); */
+    // -moz-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
     font-size: 30px;
-    color: $MostlyDesaturatedDarkBlue;
+    color: #415b76;
     /* padding: 5px; */
     z-index: 100;
-    position: fixed;
-    /* top: 0; */
-    /* left: 0; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('~images/logo.svg');
+    background-image: url(/static/media/logo.3bca661a.svg);
     background-repeat: no-repeat;
-        width: 80px;
-    height: 80px;
+    /* width: 80px; */
+    /* height: 80px; */
+    background-size: 80px 80px;
+    background-position: center;
 }
 .message-enter {
   opacity: 0.01;
