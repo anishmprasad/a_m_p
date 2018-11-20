@@ -13,7 +13,7 @@ const Home = lazy(() => import('../components/Home'));
 const About = lazy(() => import('../components/About'));
 const Header = lazy(() => import('../components/Header'));
 const Container = lazy(() => import('../components/Container'))
-const OpenSourceProject = lazy(() => import('../components/OpenSourceProject'));
+const OpenSourceProject = lazy(() => import('../containers/OpenSourceProject'));
 
 
 export default function Router() {

@@ -1,4 +1,4 @@
 const constants = {
-  'react-circular-graph' : 'ReactCircularGraph'
+  'react-circular-graph' : 'Graph'
 }
 export default constants;

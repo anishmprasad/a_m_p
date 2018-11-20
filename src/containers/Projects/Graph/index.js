@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import ReactCircularGraph from 'react-circular-graph';
-import Circular from '../Circular';
+import Circular from './Circular';
 import { isProjectChanged, CanvasData } from '../../actions/graph';
 import './index.scss';
 
@@ -1055,7 +1055,7 @@ var data = [
 		}
 	}
 ];
-class ReactCircularGraph extends Component {
+class Graph extends Component {
 	selectedProjectChanged = object => {
 		this.props.isProjectChanged(object);
 	};
@@ -1088,4 +1088,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
 	null,
 	mapDispatchToProps
-)(ReactCircularGraph);
+)(Graph);
