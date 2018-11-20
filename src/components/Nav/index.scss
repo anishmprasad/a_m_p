@@ -2,16 +2,16 @@
 @import "../../utils/scss/theme.scss";
 
 .menu{
-  list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-    justify-content: flex-end;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin: 0;
+	justify-content: flex-end;
     .menu-list{
-      a{
-        color: $VeryDarkDesaturatedBlue;
-        margin-left: 20px;
-        text-decoration: none;
-      }
+		a{
+			color: $VeryDarkDesaturatedBlue;
+			margin-left: 20px;
+			text-decoration: none;
+		}
     }
 }

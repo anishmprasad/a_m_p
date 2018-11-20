@@ -51,6 +51,7 @@ function consoleText(words, animatedText,consoleText, colors) {
     }
   }, 400)
 }
+
 export default class Home extends Component{
   componentDidMount(){
     // consoleText(
