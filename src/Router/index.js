@@ -13,7 +13,7 @@ const Home = lazy(() => import('../components/Home'));
 const About = lazy(() => import('../components/About'));
 const Header = lazy(() => import('../components/Header'));
 const Container = lazy(() => import('../components/Container'))
-// const InlineLoader = lazy(() => import('../components/InlineLoader'));
+const OpenSourceProject = lazy(() => import('../components/OpenSourceProject'));
 
 
 export default function Router() {
@@ -25,6 +25,7 @@ export default function Router() {
           <Switch>
           <Route exact path='/' render={() => <Home />} />
           <Route exact path='/opensource' render={() => <OpenSource />} />
+          <Route exact path='/opensource/:project' render={() => <OpenSourceProject />} />
           <Route exact path='/about' render={() => <About />} />
         </Switch>
         </Container>
