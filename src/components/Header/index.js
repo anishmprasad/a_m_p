@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import {InitialFetch} from '../../actions/Header'
-import Nav from '../Nav'
-import { CSSTransition } from 'react-transition-group';
-import './index.scss'
+import { InitialFetch } from '../../actions/Header';
+import Nav from '../Nav';
+import { withRouter } from 'react-router';
 
-import logo from 'images/logo.svg'
+// import { CSSTransition } from 'react-transition-group';
+import './index.scss';
 
-console.log(logo)
+// import logo from 'images/logo.svg';
 
-class Header extends Component{
-  state = {
-    isLoading : true
-  }
-  componentDidMount(){
-    this.props.InitialFetch()
-    .then(res => {
-      this.setState({isLoading : false})
-    })
-  }
-  render(){
+class Header extends Component {
+	state = {
+    	isLoading: true
+  	};
+  	componentDidMount() {
+    	this.props.InitialFetch().then(res => {
+      		this.setState({ isLoading: false });
+    	});
+  	}
+  	homeRedirection = () => {
+    	this.props.history.push('/');
+  	};
+  	render() {
     // return(
     //     <div className={`container ${!this.state.isLoading ? 'loaded' : ''}`}>
     //     <div className="bg-img"></div>
@@ -56,36 +58,41 @@ class Header extends Component{
     //     </div>
     // </div>
     // )
-    return <div className={`header`}>
-        {<div
-            className={`${this.state.isLoading ? 'loading' : 'logo'}`}
-          >
-            {/* <img src={logo} alt="logo" />  */}
-            {/* {`${!this.state.isLoading ? <img src={logo} alt="logo" /> : 'A + P'}`} */}
-          </div>}
-        {/* {!this.state.isLoading && */}
-            <Nav />
-
-          {/* <CSSTransition
-            in={!this.state.isLoading}
-            timeout={500}
-            classNames="message"
-            unmountOnExit
-            onExited={() => {
-              console.log('onExited');
-            }}
-          >
-            <Nav />
-          </CSSTransition> */}
-          {/* // } */}
-      </div>; 
-
-  }
+		return (
+			<div className={`header`}>
+				{
+				<div
+					className={`${this.state.isLoading ? 'loading' : 'logo'}`}
+					onClick={!this.state.isLoading && this.homeRedirection}
+				>
+				{/* <img src={logo} alt="logo" />  */}
+				{/* {`${!this.state.isLoading ? <img src={logo} alt="logo" /> : 'A + P'}`} */}
+				</div>
+				}
+				{/* {!this.state.isLoading && */}
+				<Nav />
+				{/* <CSSTransition
+					in={!this.state.isLoading}
+					timeout={500}
+					classNames="message"
+					unmountOnExit
+					onExited={() => {
+					console.log('onExited');
+					}}
+				>
+					<Nav />
+				</CSSTransition> */}
+				{/* // } */}
+			</div>
+		);
+	}
 }
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ InitialFetch }, dispatch);
 }
-export default connect(
-  null,
-  mapDispatchToProps
-)(Header);
+export default withRouter(
+  connect(
+    null,
+    mapDispatchToProps
+  )(Header)
+);
