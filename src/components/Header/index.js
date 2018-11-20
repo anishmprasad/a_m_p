@@ -63,7 +63,7 @@ class Header extends Component {
 				{
 				<div
 					className={`${this.state.isLoading ? 'loading' : 'logo'}`}
-					onClick={!this.state.isLoading && this.homeRedirection}
+					onClick={!this.state.isLoading ? this.homeRedirection : null}
 				>
 				{/* <img src={logo} alt="logo" />  */}
 				{/* {`${!this.state.isLoading ? <img src={logo} alt="logo" /> : 'A + P'}`} */}

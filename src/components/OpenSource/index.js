@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import './index.scss'
 
 import { fetchOpenSource } from '../../actions/OpenSource'
+import InlineLoader from '../InlineLoader';
 
 class OpenSource extends Component {
 	state = {
@@ -40,11 +41,12 @@ class OpenSource extends Component {
 	render(){
 		console.log(this.state.opensource);
 		return(
+			this.state.opensource.length !== 0 ?
 			<div className="opensource">
 				<div id="behance-projects" className="project grid-flex">
 					{this.state.opensource.map(this.mapProjects)}
 				</div>
-			</div>
+			</div> : <InlineLoader/>
 		)
 	}
 }
