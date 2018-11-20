@@ -21,20 +21,21 @@ class OpenSource extends Component {
 	mapProjects(project,index){
 		return(
 			<article className="card cols-3" key={`project-${index}`}>
-				<a href={project.url} id="b36828271" target="_blank">
+				<div className="content-card">
 					<img 
 						src="https://mir-s3-cdn-cf.behance.net/projects/404/fefe0336828271.Y3JvcCwxMzE0LDEwMjgsMTg1LDMy.jpg" 
 						alt="LaunchPad" 
 						rel="noopener"
 					/>
 					<div className="content">
-						<h3>LaunchPad</h3>
+						<h3>{project.projectname}</h3>
 						<small>
-							<span className="tag">UI/UX</span>
-							<span className="tag">Product Design</span>
+							{project.npm !== "null" && <span className="tag" onClick={()=>{this.projectOnclick(project.npm)}}>NPM</span>}
+							{project.github !== "null" && <span className="tag" onClick={()=>{this.projectOnclick(project.github)}}>GitHub</span>}
+							{project.demo !== "null" && <span className="tag" onClick={()=>{this.projectOnclick(project.demo);}}>Demo</span>}
 						</small>
 					</div>
-				</a>
+				</div>
 			</article>
 		)
 	}
