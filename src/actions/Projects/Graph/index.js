@@ -1,5 +1,5 @@
 // import axios from 'axios';
-import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../actionTypes/graph';
+import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../../../actionTypes/Projects/Graph';
 
 import { createActionWithTypeAndPayload } from "../../ActionTemplates";
 

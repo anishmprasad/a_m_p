@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import ReactCircularGraph from 'react-circular-graph';
 import Circular from './Circular';
-import { isProjectChanged, CanvasData } from '../../actions/graph';
+import { isProjectChanged, CanvasData } from '../../../actions/Projects/Graph';
 import './index.scss';
 
 var config = {

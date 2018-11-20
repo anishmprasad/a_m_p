@@ -1,4 +1,4 @@
-import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../actionTypes/graph';
+import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../../../actionTypes/Projects/Graph';
 
 const initialState = {};
 
