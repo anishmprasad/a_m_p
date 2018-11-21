@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
 import './index.scss'
 
@@ -18,23 +19,45 @@ class OpenSource extends Component {
 			console.log('fetchOpenSource',response);
 		})
 	}
+	projectOnclick = (projecturl,type = null) => {
+		console.log(projecturl);
+		if(type === 'demo'){
+			this.props.history.push(`opensource/${projecturl}`);
+		}else{
+			this.props.history.push(`/${projecturl}`);
+		}
+	}
 	mapProjects(project,index){
 		return(
 			<article className="card cols-3" key={`project-${index}`}>
-				<a href={project.url} id="b36828271" target="_blank">
+				<div className="content-card">
 					<img 
 						src="https://mir-s3-cdn-cf.behance.net/projects/404/fefe0336828271.Y3JvcCwxMzE0LDEwMjgsMTg1LDMy.jpg" 
 						alt="LaunchPad" 
 						rel="noopener"
 					/>
 					<div className="content">
-						<h3>LaunchPad</h3>
+						<h3>{project.projectname}</h3>
 						<small>
-							<span className="tag">UI/UX</span>
-							<span className="tag">Product Design</span>
+							{project.npm !== "null" && 
+								<span 
+									className="tag" 
+									onClick={()=>{ this.projectOnclick(project.npm) }}
+								>NPM</span>
+							}
+							{project.github !== "null" && 
+								<span 
+									className="tag" 
+									onClick={()=>{ this.projectOnclick(project.github) }}
+								>GitHub</span>}
+							{project.demo !== "null" && 
+								<span 
+									className="tag" 
+									onClick={() => { this.projectOnclick(project.projectname,'demo') }}
+								>Demo</span>}
 						</small>
 					</div>
-				</a>
+				</div>
 			</article>
 		)
 	}
@@ -44,7 +67,7 @@ class OpenSource extends Component {
 			this.state.opensource.length !== 0 ?
 			<div className="opensource">
 				<div id="behance-projects" className="project grid-flex">
-					{this.state.opensource.map(this.mapProjects)}
+					{this.state.opensource.map(this.mapProjects.bind(this))}
 				</div>
 			</div> : <InlineLoader/>
 		)
@@ -58,7 +81,7 @@ class OpenSource extends Component {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchOpenSource }, dispatch);
 }
-export default connect(
+export default withRouter(connect(
   null,
   mapDispatchToProps
-)(OpenSource);
+)(OpenSource));
