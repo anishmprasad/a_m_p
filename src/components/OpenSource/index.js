@@ -39,9 +39,22 @@ class OpenSource extends Component {
 					<div className="content">
 						<h3>{project.projectname}</h3>
 						<small>
-							{project.npm !== "null" && <span className="tag" onClick={()=>{ this.projectOnclick(project.npm) }}>NPM</span>}
-							{project.github !== "null" && <span className="tag" onClick={()=>{ this.projectOnclick(project.github) }}>GitHub</span>}
-							{project.demo !== "null" && <span className="tag" onClick={() => { this.projectOnclick(project.projectname,'demo'); }}>Demo</span>}
+							{project.npm !== "null" && 
+								<span 
+									className="tag" 
+									onClick={()=>{ this.projectOnclick(project.npm) }}
+								>NPM</span>
+							}
+							{project.github !== "null" && 
+								<span 
+									className="tag" 
+									onClick={()=>{ this.projectOnclick(project.github) }}
+								>GitHub</span>}
+							{project.demo !== "null" && 
+								<span 
+									className="tag" 
+									onClick={() => { this.projectOnclick(project.projectname,'demo') }}
+								>Demo</span>}
 						</small>
 					</div>
 				</div>
