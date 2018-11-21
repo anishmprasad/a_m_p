@@ -8,7 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import Loader from '../components/Loader';
 import './index.scss';
 
-const OpenSource = lazy(() => import('../components/OpenSource'));
+const OpenSource = lazy(() => import('../containers/OpenSource'));
 const Home = lazy(() => import('../components/Home'));
 const About = lazy(() => import('../components/About'));
 const Header = lazy(() => import('../components/Header'));

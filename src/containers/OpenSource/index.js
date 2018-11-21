@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 import './index.scss'
 
 import { fetchOpenSource } from '../../actions/OpenSource'
-import InlineLoader from '../InlineLoader';
+import InlineLoader from '../../components/InlineLoader';
 
 class OpenSource extends Component {
 	state = {
