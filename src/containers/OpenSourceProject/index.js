@@ -1,35 +1,20 @@
 import React, { Component} from 'react';
 import { withRouter } from 'react-router';
-import Graph from '../Projects/Graph'
 
 import constants from './constants'
 import InlineLoader from '../../components/InlineLoader';
 
 
-
-
-
-// function OpenSourceProject(props){
-//   return React.createElement(mapProject(props.match.params.project))
-// }
-
-// export default withRouter(OpenSourceProject)
-
-
-
 class OpenSourceProject extends Component {
-	constructor(props) {
-		super(props);
 
-		this.state = {
-			components: []
-		};
-	}
+	state = {
+		components: []
+	};
 
 	mapProject(project){
-	  console.log(constants[project]);
 	  return constants[project]
-	}
+  }
+  
 	addComponent = async type => {
 		console.log(`Loading ${type} component...`);
 
