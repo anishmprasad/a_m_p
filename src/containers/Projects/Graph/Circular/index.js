@@ -64,9 +64,10 @@ class Circular extends Component {
 	}
 }
 function mapStateToProps(state) {
+	const {Graph} = state.Project
 	return {
-		canvas: state.canvas && state.canvas.data,
-		selectedProjectChanged: state.canvas && state.canvas.isProjectChanged
+		canvas: Graph && Graph.data,
+		selectedProjectChanged: Graph && Graph.isProjectChanged
 	};
 }
 

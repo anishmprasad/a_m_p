@@ -1063,9 +1063,9 @@ class Graph extends Component {
 		return false;
 	}
 	render() {
-		console.log('graph render');
 		return (
 			<div className='graph'>
+				<h3 className="graph-title">React Circular Graph</h3>
 				<ReactCircularGraph
 					width={720}
 					height={720}
@@ -1077,6 +1077,15 @@ class Graph extends Component {
 					}}
 				/>
 				<Circular />
+				<div className="description">
+					JavaScript version available on 
+						<a 
+							href="https://github.com/anishmprasad/circular-knowledge-graph" 
+							className=""
+							target="_blank"
+						rel="noopener noreferrer"
+						> Circular Knowlege Graph</a>
+				</div>
 			</div>
 		);
 	}
