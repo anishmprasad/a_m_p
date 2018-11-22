@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 // import About from '../components/About';
 import Loader from '../components/Loader';
 import './index.scss';
+import AnimatedTransition from '../components/AnimatedTransition';
 
 const OpenSource = lazy(() => import('../containers/OpenSource'));
 const Home = lazy(() => import('../components/Home'));
@@ -27,6 +28,7 @@ export default function Router() {
           <Route exact path='/opensource' render={() => <OpenSource />} />
           <Route exact path='/opensource/:project' render={() => <OpenSourceProject />} />
           <Route exact path='/about' render={() => <About />} />
+          <Route exact path='/animatedtransition' render={() => <AnimatedTransition />} />
         </Switch>
         </Container>
       </Suspense>
