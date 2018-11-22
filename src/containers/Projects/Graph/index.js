@@ -20,6 +20,8 @@ var config = {
 	}
 };
 
+// 'https://opensource.google.com/assets/images/alphabet/' + this.data.startsWith + '.gif';
+
 var data = [
 	{
 		id: 'sketch-rtl',

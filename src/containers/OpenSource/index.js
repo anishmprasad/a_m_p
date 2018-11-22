@@ -20,11 +20,10 @@ class OpenSource extends Component {
 		})
 	}
 	projectOnclick = (projecturl,type = null) => {
-		console.log(projecturl);
 		if(type === 'demo'){
 			this.props.history.push(`opensource/${projecturl}`);
 		}else{
-			this.props.history.push(`/${projecturl}`);
+			window.open(projecturl, '_blank');
 		}
 	}
 	mapProjects(project,index){
