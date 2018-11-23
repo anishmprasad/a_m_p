@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+// import { withRouter } from 'react-router';
 import ReactCircularGraph from 'react-circular-graph';
 import Circular from './Circular';
 import { isProjectChanged, CanvasData } from '../../../actions/Projects/Graph';

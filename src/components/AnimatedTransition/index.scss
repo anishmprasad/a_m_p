@@ -8,6 +8,9 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 800px;
+  *{
+    transition: none;
+  }
 }
 
 .hero-area {
