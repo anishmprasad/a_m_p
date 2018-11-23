@@ -1,10 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// import OpenSource from '../components/OpenSource'
-// import Home from '../components/Home'
-// import Header from '../components/Header'
-// import About from '../components/About';
 import Loader from '../components/Loader';
 import './index.scss';
 import AnimatedTransition from '../components/AnimatedTransition';

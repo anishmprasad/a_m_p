@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { withRouter } from 'react-router';
+// import { bindActionCreators } from 'redux';
+// import { withRouter } from 'react-router';
 import './index.scss';
 
 class Circular extends Component {
-	constructor(props) {
-		super(props);
-	}
 	state = {
 		show: true
 	};

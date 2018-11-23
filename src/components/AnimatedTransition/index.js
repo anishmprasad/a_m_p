@@ -1,21 +1,10 @@
 import React,{Component} from 'react';
 import {
   TweenMax,
-  Power2,
-  TimelineLite,
   TimelineMax,
   Sine,
   Back
 } from "gsap/TweenMax";
-
-// import {
-//   SplitText
-// } from "gsap/all";
-
-// import {
-//   Draggable,
-// } from "gsap/utils";
-// import SplitText from "gsap/SplitText";
 
 // const { TransitionGroup } = React.addons;
 
@@ -28,7 +17,6 @@ class Page extends Component {
       screen: 0,
       splitText: undefined
     };
-    this.toggleShape = this.toggleShape.bind(this);
   }
 
   componentDidMount() {
@@ -61,7 +49,8 @@ class Page extends Component {
     }
   }
 
-  toggleShape() {
+  toggleShape = () => {
+    console.log(this.state.splitText)
     if (this.state.screen === 0) {
       this.animFire(this.state.splitText);
     } else if (this.state.screen === 1) {
@@ -76,7 +65,7 @@ class Page extends Component {
 
   animFire(splitText) {
     const tl = new TimelineMax,
-      lines = splitText.lines,
+      lines = splitText.innerText,
       dur = 1.75,
       stD = 0.08,
       stA = 'start';
@@ -98,9 +87,9 @@ class Page extends Component {
     tl.staggerFromTo(this.g2.childNodes, dur, {
       drawSVG: "33% 0%"
     }, {
-        drawSVG: "71% 100%",
-        ease: Back.easeOut
-      }, stD, stA);
+      drawSVG: "71% 100%",
+      ease: Back.easeOut
+    }, stD, stA);
     tl.staggerFromTo(this.g3.childNodes, dur, {
       drawSVG: "65% 100%"
     }, {
@@ -117,71 +106,22 @@ class Page extends Component {
     tl.add(turn(this.g2), 'start+=2');
     tl.add(turn(this.g3), 'start+=2');
     tl.add(turn(this.g4), 'start+=2');
-    tl.fromTo(this.crect, 0.5, {
-      scaleX: 1,
-      scaleY: 1,
-      x: 0,
-      y: 0
-    }, {
-        scaleX: 0.5,
-        scaleY: 1.2,
-        x: -35,
-        y: -50,
-        transformOrigin: '50% 50%',
-        ease: Sine.easeInOut
-      }, 'start+=2');
-    tl.fromTo(this.shapes, 0.5, {
-      scale: 1,
-      x: 0,
-      y: 0,
-      opacity: 1
-    }, {
-        scale: 2,
-        x: 0,
-        opacity: 0.25,
-        transformOrigin: '50% 50%',
-        ease: Sine.easeInOut
-      }, 'start+=2');
+    tl.fromTo(this.crect, 0.5, 
+      {scaleX: 1,scaleY: 1,x: 0,y: 0}, 
+      {scaleX: 0.5,scaleY: 1.2,x: -35,y: -50,transformOrigin: '50% 50%',ease: Sine.easeInOut},'start+=2');
+    tl.fromTo(this.shapes, 0.5, 
+      {scale: 1,x: 0,y: 0,opacity: 1}, 
+      {scale: 2,x: 0,opacity: 0.25,transformOrigin: '50% 50%',ease: Sine.easeInOut}, 'start+=2');
     if (window.matchMedia("(max-width: 600px)").matches) {
-      tl.to(this.heroarea, 0.5, {
-        x: -30,
-        ease: Sine.easeInOut
-      }, 'start+=2');
+      tl.to(this.heroarea, 0.5, { x: -30, ease: Sine.easeInOut }, 'start+=2');
     }
-    tl.to(this.hero, 0.5, {
-      x: -125,
-      y: 70,
-      ease: Sine.easeInOut
-    }, 'start+=2');
-    tl.to(this.text, 0.5, {
-      top: '30vh',
-      x: -50,
-      ease: Sine.easeInOut
-    }, 'start+=2');
-    tl.to(this.button, 0.5, {
-      x: -112,
-      ease: Sine.easeIn
-    }, 'start+=2');
-    tl.to(this.button.childNodes[0], 0.25, {
-      opacity: 0,
-      display: 'none',
-      ease: Sine.easeIn
-    }, 'start+=2');
-    tl.to(this.button.childNodes[1], 0.25, {
-      display: 'block',
-      opacity: 1,
-      ease: Sine.easeOut
-    }, 'start+=2.25');
-    tl.to(this.staggerP, 0.1, {
-      opacity: 1,
-    }, 'start+=2.5');
-    tl.staggerFromTo(lines, 3, {
-      opacity: 0
-    }, {
-        opacity: 1,
-        ease: Sine.easeOut
-      }, 0.06, 'start+=2.5');
-
+    tl.to(this.hero, 0.5, {x: -125,y: 70,ease: Sine.easeInOut}, 'start+=2');
+    tl.to(this.text, 0.5, {top: '30vh',x: -50,ease: Sine.easeInOut}, 'start+=2');
+    tl.to(this.button, 0.5, {x: -112,ease: Sine.easeIn}, 'start+=2');
+    tl.to(this.button.childNodes[0], 0.25, {opacity: 0,display: 'none',ease: Sine.easeIn}, 'start+=2');
+    tl.to(this.button.childNodes[1], 0.25, {display: 'block',opacity: 1,ease: Sine.easeOut}, 'start+=2.25');
+    tl.to(this.staggerP, 0.1, {opacity: 1,}, 'start+=2.5');
+    tl.staggerFromTo(lines, 3, {opacity: 0}, {opacity: 1,ease: Sine.easeOut}, 0.06, 'start+=2.5');
     tl.timeScale(1.7);
 
     //helper for turning the rect
@@ -416,7 +356,7 @@ class Page extends Component {
           <h1>Anish M Prasad</h1>
           <button className="button" ref={c => this.button = c} onClick={this.toggleShape}>
             <span className="read">Read More ></span>
-            <span className="share"><IconMap /> See Map</span>
+            <span className="share">See Map</span>
             <span className="home">Return Home</span>
           </button>
           <div className="staggerP" ref={c => this.staggerP = c}>
@@ -430,34 +370,12 @@ class Page extends Component {
 };
 
 
-
-//IconMap
-function IconMap(props) {
-  //props and default props
-  const fillColor = props.fillColor || 'currentColor'
-
-  return (
-    <svg className="iconMap" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 100 100"><path fill={fillColor} d="M81.4,40.6C80.3,23.7,66.5,10.5,50,10.5S19.7,23.7,18.6,40.6c-0.3,4.3,0.3,8.6,1.9,12.8c1.5,4,3.9,7.9,7.1,11.3l20.5,23.9  c0.5,0.6,1.2,0.9,1.9,0.9s1.4-0.3,1.9-0.9l20.5-23.9c3.2-3.5,5.6-7.3,7.1-11.3C81,49.2,81.7,44.9,81.4,40.6z M50,50.5  c-5.3,0-9.7-4.5-9.7-10s4.3-10,9.7-10s9.7,4.5,9.7,10S55.3,50.5,50,50.5z"></path></svg>
-  )
-}
-
-
 export default class AnimatedTransition extends Component {
 
   render() {
     return (
       <div className="external">
-
-        {/* <Watermark /> */}
-
-        {/* <header> */}
-          {/* <IconBrand /> */}
-          {/* <Search /> */}
-          {/* <Bookmark /> */}
-        {/* </header> */}
-
         <Page />
-
       </div>
     );
   };
