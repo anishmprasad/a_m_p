@@ -8,7 +8,10 @@ import {
 
 // const { TransitionGroup } = React.addons;
 
+import map from '../../assets/images/persp-map.gif';
+import blog from '../../assets/images/blog-hero2.jpg'
 import './index.scss';
+
 
 class Page extends Component {
   constructor() {
@@ -323,8 +326,8 @@ class Page extends Component {
           </defs>
           <title>change-shape2</title>
           <g style={{ clipPath: 'url(#clip-path)' }}>
-            <image ref={c => this.map = c} width="1000" height="667" transform="scale(1.05)" xlinkHref="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/persp-map.gif" />
-            <image className="gray" ref={c => this.gray = c} width="1000" height="667" transform="scale(1.05)" xlinkHref="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/blog-hero2.jpg" />
+            <image ref={c => this.map = c} width="1000" height="667" transform="scale(1.05)" xlinkHref={map} />
+            <image className="gray" ref={c => this.gray = c} width="1000" height="667" transform="scale(1.05)" xlinkHref={blog} />
           </g>
           <rect id="square" x="417.9" y="268.9" width="217" height="217" fill="none" stroke="#fff" strokeMiterlimit="10" strokeWidth="9" />
           <polygon id="triangle" points="525.6 271.6 650 487 401.2 487 525.6 271.6" fill="none" stroke="#fff" strokeMiterlimit="10" strokeWidth="9" />
