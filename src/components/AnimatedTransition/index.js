@@ -53,7 +53,7 @@ class Page extends Component {
   }
 
   toggleShape = () => {
-    console.log(this.state.splitText)
+    console.log(this.state.screen)
     if (this.state.screen === 0) {
       this.animFire(this.state.splitText);
     } else if (this.state.screen === 1) {
@@ -120,9 +120,11 @@ class Page extends Component {
     }
     tl.to(this.hero, 0.5, {x: -125,y: 70,ease: Sine.easeInOut}, 'start+=2');
     tl.to(this.text, 0.5, {top: '30vh',x: -50,ease: Sine.easeInOut}, 'start+=2');
+
     tl.to(this.button, 0.5, {x: -112,ease: Sine.easeIn}, 'start+=2');
     tl.to(this.button.childNodes[0], 0.25, {opacity: 0,display: 'none',ease: Sine.easeIn}, 'start+=2');
     tl.to(this.button.childNodes[1], 0.25, {display: 'block',opacity: 1,ease: Sine.easeOut}, 'start+=2.25');
+
     tl.to(this.staggerP, 0.1, {opacity: 1,}, 'start+=2.5');
     tl.staggerFromTo(lines, 3, {opacity: 0}, {opacity: 1,ease: Sine.easeOut}, 0.06, 'start+=2.5');
     tl.timeScale(1.7);
@@ -171,6 +173,7 @@ class Page extends Component {
       transformOrigin: '50% 50%',
       ease: Sine.easeOut
     }, 'start3');
+
     tl.to(this.button.childNodes[2], 0.25, {
       opacity: 0,
       display: 'none',
@@ -181,6 +184,7 @@ class Page extends Component {
       opacity: 1,
       ease: Sine.easeOut
     }, 'start3+=0.25');
+
     tl.to(this.shapes, 0.5, {
       scaleX: 1,
       scaleY: 1,
@@ -270,6 +274,8 @@ class Page extends Component {
       opacity: 0.75,
       ease: Sine.easeOut
     }, 'start2');
+
+
     tl.to(this.button, 0.3, {
       x: 0,
       ease: Sine.easeOut
@@ -284,6 +290,8 @@ class Page extends Component {
       opacity: 1,
       ease: Sine.easeOut
     }, 'start2+=0.25');
+
+
     if (window.matchMedia("(max-width: 600px)").matches) {
       tl.to(this.heroarea, 0.5, {
         x: -150,
@@ -357,10 +365,13 @@ class Page extends Component {
 
         <div className="textarea" ref={c => this.text = c}>
           <h1>Anish M Prasad</h1>
-          <button className="button" ref={c => this.button = c} onClick={this.toggleShape}>
-            <span className="read">Read More ></span>
-            <span className="share">See Map</span>
-            <span className="home">Return Home</span>
+          <button 
+            className="button" 
+            ref={c => this.button = c} 
+            onClick={this.toggleShape}>
+              <span className="read">Read More ></span>
+              <span className="share">See Map</span>
+              <span className="home">Return Home</span>
           </button>
           <div className="staggerP" ref={c => this.staggerP = c}>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum repellendus, molestiae excepturi quo, ab possimus perspiciatis sunt quis. Magni impedit hic culpa, ea. Praesentium facilis dicta excepturi magnam perferendis?</p>
