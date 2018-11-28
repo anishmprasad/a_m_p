@@ -4,176 +4,372 @@
     color:$VeryDarkDesaturatedBlue;
     font-size: 30px;
     text-align: center;
-    background-color: $GrayishCyan;
+    // background-color: $GrayishCyan;
     // position: absolute;
     // top: 45%;
     // right: 45%;
 }
-    // body {
-    //     background: #35483e;
-    //     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/494458/bg.jpg);
-    //     background-size: cover;
-    //     font-family: Arial;
-    // }
-    // svg {
-    //     display: block;
-    //     font: 8em 'Oswald';
-    //     width: 960px;
-    //     height: 300px;
-    //     margin: 0 auto;
-    // }
-    // .text-copy {
-    //     fill: none;
-    //     stroke: white;
-    //     stroke-dasharray: 6% 29%;
-    //     stroke-width: 5px;
-    //     stroke-dashoffset: 0%;
-    //     animation: stroke-offset 5s infinite linear;
-    // }
-    // .text-copy:nth-child(1) {
-    //     stroke: #5c0404;
-    //     animation-delay: -1s;
-    // }
-    // .text-copy:nth-child(2) {
-    //     stroke: #d6801c;
-    //     animation-delay: -2s;
-    // }
-    // .text-copy:nth-child(3) {
-    //     stroke: #E7D84B;
-    //     animation-delay: -3s;
-    // }
-    // .text-copy:nth-child(4) {
-    //     stroke: #ffff9e;
-    //     animation-delay: -4s;
-    // }
-    // .text-copy:nth-child(5) {
-    //     stroke: #55981b;
-    //     animation-delay: -5s;
-    // }
-    // @keyframes stroke-offset {
-    //     100% { stroke-dashoffset: -35%;}
-    // }
-
-    // .content {
-    //     width: 310px;
-    //     font-size: 36px;
-    //     line-height: 40px;
-    //     color: #ecf0f1;
-    //     margin: 1em auto 0;
-    // }
-    // .static {
-    //     float: left;
-    //     overflow: hidden;
-    //     height: 40px;
-    // }
-    // p {
-    //     display: inline;
-    //     float: left;
-    //     margin: 0;
-    //     color: #ffff9e;
-    // }
-    // ul {
-    //     margin-top: 0;
-    //     padding-left: 130px;
-    //     text-align: left;
-    //     list-style: none;
-    //     animation: 6s linear 0s normal none infinite change;
-    // }
-    // ul li {
-    //     color: #E7D84B;
-    //     line-height: 40px;
-    //     margin: 0;
-    // }
-    // @keyframes change {
-    //     0% { margin-top: 0; }
-    //     15% { margin-top: 0; }
-    //     25% { margin-top: -40px; }
-    //     40% { margin-top: -40px; }
-    //     50% { margin-top: -80px; }
-    //     65% { margin-top: -80px; }
-    //     75% { margin-top: -40px; }
-    //     85% { margin-top: -40px; }
-    //     100% { margin-top: 0; }
-    // }
-
-    // .wrapper{
-    //     clear:both;
-    //     width: 400px;
-    //     margin: 0.5em auto;
-    // }
-    // .clip-text{
-    //     margin-top: 4em;
-    //     padding: 0.3em;
-    //     font-size: 3em;
-    //     font-family: 'Oswald';
-    //     text-align: center;
-    //     position: relative;
-    //     display: block;
-    //     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/494458/text-bg.jpg);
-    //     background-position: bottom;
-    //     background-size: cover;
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    //     transition: 2s ease all;
-    // }
-    // .clip-text:hover, .clip-text:hover::before {
-    //     background-position:top;
-    // }
-    // .clip-text:before, .clip-text:after {
-    //     position: absolute;
-    //     content: '';
-    // }
-    // .clip-text:before {
-    //     z-index: -2;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     background-image: inherit;
-    //     background-position: bottom;
-    //     background-size: cover;
-    //     transition: 2s ease all;
-    // }
-    // .clip-text:after {
-    //     position: absolute;
-    //     z-index: -1;
-    //     top: .125em;
-    //     right: .125em;
-    //     bottom: .125em;
-    //     left: .125em;
-    //     background-color: rgba(214, 128, 28, 0.9);
-    // }
 
 
-//     @import url(https://fonts.googleapis.com/css?family=Khula:700);
-// body {
-//   background: #111;
-// }
-.hidden {
-  opacity:0;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji');
+
+$primary-color: #1e90ff;
+$secondary-color: #ffe221;
+$tertiary-color: #ffffff;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.console-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+
+.container {
+    width: 400px;
+    height: 220px;
+    position: relative;
 }
-.console-underscore {
-    display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
-  *{
-      transition: none;
-  }
+
+h1,
+h2,
+h3 {
+    font-size: 75px;
+    text-transform: uppercase;
+
+
+    span {
+        width: 100%;
+        float: left;
+        color: $primary-color;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        transform: translateY(-50px);
+        opacity: 0;
+        animation-name: titleAnimation;
+        animation-timing-function: ease;
+        animation-duration: 3s;
+        font-family: 'Baloo Paaji';
+
+        // animation-iteration-count:infinite
+    }
+}
+
+h1 span {
+    animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+
+    &:first-child {
+        animation-delay: 0.7s;
+
+    }
+
+    &:last-child {
+        color: $secondary-color;
+        animation-delay: 0.5s;
+    }
+}
+
+h2 {
+    top: 0;
+    position: absolute;
+
+    span {
+        animation-delay: 4.1s;
+        -webkit-animation-fill-mode: forwards;
+
+        &:first-child {
+            animation-delay: 4.2s;
+
+        }
+
+        &:last-child {
+            color: $secondary-color;
+            animation-delay: 4s;
+        }
+    }
+}
+
+h3 {
+    top: 0;
+    position: absolute;
+
+    span {
+        animation-delay: 8.1s;
+        -webkit-animation-fill-mode: forwards;
+
+        &:first-child {
+            animation-delay: 8.2s;
+
+        }
+
+        &:last-child {
+            color: $secondary-color;
+            animation-delay: 8s;
+        }
+    }
+}
+
+
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+
+    }
+}
+
+
+
+
+.definition {
+    margin: 7rem 0
+}
+
+.definition dl {
+    margin: 0 auto
+}
+
+.definition dl::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.definition dl dt {
+    font-size: 3.0517578125rem;
+    line-height: 1.25;
+    margin-bottom: 1.75rem;
+    opacity: 0;
+    overflow-y: hidden;
+    position: relative
+}
+
+@media all and (min-width: 48em) {
+    .definition dl dt {
+        font-size: 3.0517578125rem
+    }
+}
+
+@media all and (min-width: 75em) {
+    .definition dl dt {
+        font-size: 3.8146972656rem
+    }
+}
+
+.definition dl dt span:nth-child(3) {
+    position: absolute;
+    -webkit-transform: translate(-10px);
+    transform: translate(-10px)
+}
+
+.definition dl dt .pronunciation {
+    font-size: 1rem;
+    line-height: 1.75;
+    display: block;
+    font-family: "leitura-news", "Georgia", "Times New Roman", serif;
+    -webkit-transform: translate(-75%);
+    transform: translate(-75%)
+}
+
+@media all and (min-width: 48em) {
+    .definition dl dt .pronunciation {
+        font-size: 1.25rem
+    }
+}
+
+.definition dl dt .pronunciation strong {
+    font-family: "Maison Neue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase
+}
+
+.definition dl dt .bullet {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: .2em;
+    width: .2em;
+    background-color: #161616;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 -8px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    vertical-align: middle
+}
+
+@media (min-width: 40em) {
+    .definition dl dt {
+        float: left;
+        width: 50%
+    }
+}
+
+.definition dl dd {
+    margin: 0;
+    opacity: 0;
+    padding: .875rem 0 .875rem 20px;
+    text-indent: -18px
+}
+
+.definition dl dd:last-child {
+    padding-bottom: 0
+}
+
+@media (min-width: 40em) {
+    .definition dl dd {
+        margin-left: 50%;
+        width: 50%
+    }
+}
+
+@media (max-width: 40em) {
+    .definition dl {
+        max-width: 300px
+    }
+}
+
+.definition.scroll-watch-in-view dt {
+    -webkit-animation: stagger-in .75s .75s ease forwards;
+    animation: stagger-in .75s .75s ease forwards
+}
+
+.definition.scroll-watch-in-view dt span:nth-child(3) {
+    -webkit-animation: definition-slide-here .375s 1.65s ease forwards;
+    animation: definition-slide-here .375s 1.65s ease forwards
+}
+
+.definition.scroll-watch-in-view .pronunciation {
+    -webkit-animation: definition-slide .75s 1.125s ease forwards;
+    animation: definition-slide .75s 1.125s ease forwards
+}
+
+.definition.scroll-watch-in-view .bullet {
+    -webkit-animation: definition-appear .25s 1.875s cubic-bezier(0.26, 0.15, 0.43, 1.42) forwards;
+    animation: definition-appear .25s 1.875s cubic-bezier(0.26, 0.15, 0.43, 1.42) forwards
+}
+
+.definition.scroll-watch-in-view .word {
+    -webkit-animation: definition-slide-here .375s 1.65s ease forwards;
+    animation: definition-slide-here .375s 1.65s ease forwards
+}
+
+.definition.scroll-watch-in-view dd {
+    -webkit-animation: stagger-in .75s 1.5s ease forwards;
+    animation: stagger-in .75s 1.5s ease forwards
+}
+
+.definition.scroll-watch-in-view dd:nth-child(2) {
+    -webkit-animation: stagger-in .375s 2s ease forwards;
+    animation: stagger-in .375s 2s ease forwards
+}
+
+.definition.scroll-watch-in-view dd:nth-child(3) {
+    -webkit-animation: stagger-in .375s 2.5s ease forwards;
+    animation: stagger-in .375s 2.5s ease forwards
+}
+
+.definition.scroll-watch-in-view dd:nth-child(4) {
+    -webkit-animation: stagger-in .375s 3s ease forwards;
+    animation: stagger-in .375s 3s ease forwards
+}
+
+@media (min-width: 48em) {
+    .definition {
+        margin: 10.5rem 0
+    }
+}
+
+@-webkit-keyframes definition-slide-here {
+    0% {
+        -webkit-transform: translate(-10px);
+        transform: translate(-10px)
+    }
+
+    100% {
+        -webkit-transform: translate(15px);
+        transform: translate(15px)
+    }
+}
+
+@keyframes definition-slide-here {
+    0% {
+        -webkit-transform: translate(-10px);
+        transform: translate(-10px)
+    }
+
+    100% {
+        -webkit-transform: translate(15px);
+        transform: translate(15px)
+    }
+}
+
+@-webkit-keyframes definition-slide {
+    0% {
+        -webkit-transform: translate(-75%);
+        transform: translate(-75%)
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes definition-slide {
+    0% {
+        -webkit-transform: translate(-75%);
+        transform: translate(-75%)
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@-webkit-keyframes definition-appear {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes definition-appear {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
 }
