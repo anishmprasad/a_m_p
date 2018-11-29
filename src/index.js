@@ -5,11 +5,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import configureStore from './store/configureStore';
 import Root from './Root';
-// import rootSaga from '../src/sagas';
 
 const store = configureStore();
-// console.log(store, rootSaga);
-// store.runSaga(rootSaga);
 const rootElement = document.getElementById('root');
 
 render(<Root store={store} />, rootElement);

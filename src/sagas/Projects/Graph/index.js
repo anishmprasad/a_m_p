@@ -1,71 +1,21 @@
 /**
- * @module Sagas/OpenSource
+ * @module Sagas/Graph
  * @desc App
  */
-import axios from 'axios';
-import { all, put, select, takeLatest } from 'redux-saga/effects';
-import { take, call, fork } from 'redux-saga/effects';
 
-import { requestOpenSource, receiveOpenSource } from '../../actions/OpenSource';
-import { REQUEST_OPENSOURCE } from '../../actionTypes/OpenSource';
-import { gsdata } from '../../Utils';
+import { all, put, select, takeLatest, take, call, fork } from 'redux-saga/effects';
 
-// /**
-//  * Switch Menu
-//  *
-//  * @param {Object} action
-//  *
-//  */
-// export function* switchMenu({ payload }) {
-// 	try {
-// 		const repos = yield select(state => state.github.repos);
+import { CanvasData, isProjectChanged } from '../../../actions/Projects/Graph';
+import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../../../actionTypes/Projects/Graph';
 
-// 		/* istanbul ignore else */
-// 		if (!repos.data[payload.query] || !repos.data[payload.query].length) {
-// 			yield put({
-// 				type: ActionTypes.GITHUB_GET_REPOS,
-// 				payload
-// 			});
-// 		}
-// 	} catch (err) {
-// 		/* istanbul ignore next */
-// 		yield put({
-// 			type: ActionTypes.EXCEPTION,
-// 			payload: err
-// 		});
-// 	}
-// }
-
-// /**
-//  * App Sagas
-//  */
-// export default function* root() {
-// 	yield all([takeLatest(ActionTypes.SWITCH_MENU, switchMenu)]);
-// }
-
-export function fetchOpenSourceApi(id = 1) {
-	const url = `https://spreadsheets.google.com/feeds/list/1vsuEOL0F6UdHU75kbm36XAvIQlVu-mgcnNhn0pI72Rg/${id}/public/values?alt=json`;
-	return axios.get(url).then(response => gsdata(response.data));
+export function* CanvasData(node) {
+	yield put(CanvasData(node));
 }
 
-export function* fetchOpenSource(sourceKey) {
-	// yield put(requestOpenSource(opensource));
-	const projects = yield call(fetchOpenSourceApi, sourceKey.id);
-	yield put(receiveOpenSource(projects));
+export function* isProjectChanged(object) {
+	yield put(isProjectChanged(object));
 }
-
-// Saga function that is initiated in the beginning to be able to listen to REQUEST_OPENSOURCE action
-// export function* fetchOpenSourceActionWatcher() {
-// 	yield takeLatest(REQUEST_OPENSOURCE, fetchOpenSource);
-// }
-
-/**
- * Opensource Sagas
- */
-// export default function* root() {
-// 	yield fork(fetchOpenSource);
-// }
-// Saga function that is initiated in the beginning to be able to listen to REQUEST_OPENSOURCE action
+// Saga function that is initiated in the beginning to be able to listen to CANVAS_DATA and IS_PROJECT_CHANGED  action
 export default function* root() {
-	yield all([takeLatest(REQUEST_OPENSOURCE, fetchOpenSource)]);
+	yield all([takeLatest(CANVAS_DATA, CanvasData)], [takeLatest(IS_PROJECT_CHANGED, isProjectChanged)]);
 }
