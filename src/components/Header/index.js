@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { InitialFetch } from '../../actions/Header';
+import { requestInitialFetch } from '../../actions/Header';
 import Nav from '../Nav';
 import { withRouter } from 'react-router';
 
@@ -11,13 +11,8 @@ import './index.scss';
 // import logo from 'images/logo.svg';
 
 class Header extends Component {
-	state = {
-		isLoading: true
-	};
-	componentDidMount() {
-		// this.props.InitialFetch().then(res => {
-		this.setState({ isLoading: false });
-		// });
+	componentWillMount() {
+		this.props.requestInitialFetch(1);
 	}
 	homeRedirection = () => {
 		this.props.history.push('/');
@@ -62,8 +57,8 @@ class Header extends Component {
 			<div className={`header`}>
 				{
 					<div
-						className={`${this.state.isLoading ? 'loading' : 'logo'}`}
-						onClick={!this.state.isLoading ? this.homeRedirection : null}
+						className={`${this.props.isLoading ? 'loading' : 'logo'}`}
+						onClick={!this.props.isLoading ? this.homeRedirection : null}
 					>
 						{/* <img src={logo} alt="logo" />  */}
 						{/* {`${!this.state.isLoading ? <img src={logo} alt="logo" /> : 'A + P'}`} */}
@@ -87,12 +82,17 @@ class Header extends Component {
 		);
 	}
 }
+function mapStateToProps(state) {
+	return {
+		isLoading: Object.keys(state.Header).length === 0
+	};
+}
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({ InitialFetch }, dispatch);
+	return bindActionCreators({ requestInitialFetch }, dispatch);
 }
 export default withRouter(
 	connect(
-		null,
+		mapStateToProps,
 		mapDispatchToProps
 	)(Header)
 );

@@ -5,7 +5,6 @@ import { withRouter } from 'react-router';
 
 import './index.scss';
 
-import { fetchOpenSource } from '../../sagas/OpenSource';
 import { requestOpenSource } from '../../actions/OpenSource';
 import InlineLoader from '../../components/InlineLoader';
 
@@ -13,7 +12,7 @@ class OpenSource extends Component {
 	state = {
 		opensource: []
 	};
-	componentDidMount() {
+	componentWillMount() {
 		this.props.requestOpenSource(2);
 		// .then(response => {
 		// 	this.setState({ opensource: response });

@@ -3,10 +3,9 @@
  * @desc App
  */
 import axios from 'axios';
-import { all, put, select, takeLatest } from 'redux-saga/effects';
-import { take, call, fork } from 'redux-saga/effects';
+import { all, put, takeLatest, call } from 'redux-saga/effects';
 
-import { requestOpenSource, receiveOpenSource } from '../../actions/OpenSource';
+import { receiveOpenSource } from '../../actions/OpenSource';
 import { REQUEST_OPENSOURCE } from '../../actionTypes/OpenSource';
 import { gsdata } from '../../Utils';
 
