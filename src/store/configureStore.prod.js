@@ -1,13 +1,17 @@
 import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import StockApp from '../reducers';
-import ReduxPromise from 'redux-promise';
+// import thunk from 'redux-thunk';
+import reducer from '../reducers';
+import rootSaga from '../sagas';
 
-// create a store that has redux-thunk middleware enabled
-const createStoreWithMiddleware = applyMiddleware(
-  thunk, ReduxPromise
-)(createStore);
+// import ReduxPromise from 'redux-promise';
+
+import createSagaMiddleware from 'redux-saga';
+export const sagaMiddleware = createSagaMiddleware();
+
+// create a store that has redux-saga middleware enabled
+const createStoreWithMiddleware = applyMiddleware(sagaMiddleware)(createStore);
+sagaMiddleware.run(rootSaga);
 
 export default function configureStore() {
-  return createStoreWithMiddleware(StockApp);
+	return createStoreWithMiddleware(reducer);
 }

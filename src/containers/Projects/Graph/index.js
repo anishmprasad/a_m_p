@@ -26,8 +26,7 @@ var data = [
 	{
 		id: 'sketch-rtl',
 		name: 'RTL Sketch Plugin',
-		summary:
-			"Automatically create RTL layouts of your designs with this plugin for Bohemian Coding's Sketch 3",
+		summary: "Automatically create RTL layouts of your designs with this plugin for Bohemian Coding's Sketch 3",
 		startsWith: 'r',
 		fallbackColor: '#4285F4',
 		RGB: {
@@ -39,8 +38,7 @@ var data = [
 	{
 		id: 'certificate-transparency',
 		name: 'Certificate Transparency',
-		summary:
-			'A framework for monitoring and auditing SSL certificates in nearly real time',
+		summary: 'A framework for monitoring and auditing SSL certificates in nearly real time',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/certificate-transparency/logo.png?rs=AGWjSYTULdv_8I5cYqg5g-_OwdB-YI2Leg&sqp=-oaymwEICEwQTCAAUAEI3M-MygU',
 		iconUrlMedium:
@@ -75,8 +73,7 @@ var data = [
 	{
 		id: 'boringssl',
 		name: 'BoringSSL',
-		summary:
-			"A fork of OpenSSL used to implement cryptography and TLS across most of Google's products",
+		summary: "A fork of OpenSSL used to implement cryptography and TLS across most of Google's products",
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/boringssl/logo.png?rs=AGWjSYSQZ8Jv8RPkEUJ-LMOTPn7a-FmeyA&sqp=-oaymwEICEwQTCAAUAEIxc-MygU',
 		iconUrlMedium:
@@ -93,8 +90,7 @@ var data = [
 	{
 		id: 'dart',
 		name: 'Dart',
-		summary:
-			'Dart is a language designed to be productive, stable, and free of surprises',
+		summary: 'Dart is a language designed to be productive, stable, and free of surprises',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/dart/logo.png?rs=AGWjSYQJDrA7Y_mFAt8WJWSRuJLvWv0OVw&sqp=-oaymwEICEwQTCAAUAEI6M-MygU',
 		iconUrlMedium:
@@ -136,10 +132,8 @@ var data = [
 		id: 'crouton',
 		name: 'crouton',
 		summary: 'Chromium OS Universal Chroot Environment',
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/crouton/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/crouton/logo.svg',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/crouton/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/crouton/logo.svg',
 		primaryColor: '#696969',
 		startsWith: 'c',
 		fallbackColor: '#EA4335',
@@ -152,8 +146,7 @@ var data = [
 	{
 		id: 'fontview',
 		name: 'FontView',
-		summary:
-			'A demo app that displays fonts using a free/libre/open-source text rendering stack',
+		summary: 'A demo app that displays fonts using a free/libre/open-source text rendering stack',
 		startsWith: 'f',
 		fallbackColor: '#FBBC05',
 		RGB: {
@@ -177,8 +170,7 @@ var data = [
 	{
 		id: 'blockly',
 		name: 'Blockly',
-		summary:
-			'Open source library for adding drag and drop block coding to apps',
+		summary: 'Open source library for adding drag and drop block coding to apps',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/blockly/logo.png?rs=AGWjSYTGPO0FZ9DGwonoYZPveYa0ynIyRQ&sqp=-oaymwEICEwQTCAAUAEIwMCU3gU',
 		iconUrlMedium:
@@ -236,8 +228,7 @@ var data = [
 	{
 		id: 'polymer',
 		name: 'Polymer',
-		summary:
-			'A lightweight library built on top of the Web Components standard',
+		summary: 'A lightweight library built on top of the Web Components standard',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/polymer/logo.png?rs=AGWjSYSsxFF_0G18_1F3SriWJl_lesqN5w&sqp=-oaymwEICEwQTCAAUAEIptCMygU',
 		iconUrlMedium:
@@ -283,8 +274,7 @@ var data = [
 	{
 		id: 'hilbert',
 		name: 'Hilbert',
-		summary:
-			'Go package for mapping values to and from space-filling curves, such as Hilbert and Peano curves',
+		summary: 'Go package for mapping values to and from space-filling curves, such as Hilbert and Peano curves',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/hilbert/logo.png?rs=AGWjSYQ2MN7owHqLRAPjm5O5NIp_Own6Zg&sqp=-oaymwEICEwQTCAAUAEIhdCMygU',
 		iconUrlMedium:
@@ -301,8 +291,7 @@ var data = [
 	{
 		id: 'prob.js',
 		name: 'Prob.js',
-		summary:
-			'Generate random numbers from different probability distributions',
+		summary: 'Generate random numbers from different probability distributions',
 		startsWith: 'p',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -332,10 +321,8 @@ var data = [
 		id: 'angular',
 		name: 'Angular',
 		summary: 'A web application framework for mobile, desktop, and web',
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/angular/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/angular/logo.svg',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/angular/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/angular/logo.svg',
 		startsWith: 'a',
 		fallbackColor: '#FBBC05',
 		RGB: {
@@ -347,8 +334,7 @@ var data = [
 	{
 		id: 'cameraview',
 		name: 'CameraView',
-		summary:
-			'CameraView helps Android developers easily integrate Camera features',
+		summary: 'CameraView helps Android developers easily integrate Camera features',
 		startsWith: 'c',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -373,10 +359,8 @@ var data = [
 		id: 'bazel',
 		name: 'Bazel',
 		summary: "Google's build system for fast and correct builds",
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/bazel/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/bazel/logo.svg',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/bazel/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/bazel/logo.svg',
 		primaryColor: '#43A047',
 		startsWith: 'b',
 		fallbackColor: '#FBBC05',
@@ -389,8 +373,7 @@ var data = [
 	{
 		id: 'noto',
 		name: 'Noto Fonts',
-		summary:
-			'Fonts aiming to support all languages with a harmonious look and feel',
+		summary: 'Fonts aiming to support all languages with a harmonious look and feel',
 		startsWith: 'n',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -452,8 +435,7 @@ var data = [
 	{
 		id: 'moe',
 		name: 'MOE: Make Open Easy',
-		summary:
-			'Synchronizes, translates, and scrubs source code repositories',
+		summary: 'Synchronizes, translates, and scrubs source code repositories',
 		startsWith: 'm',
 		fallbackColor: '#FBBC05',
 		RGB: {
@@ -483,8 +465,7 @@ var data = [
 	{
 		id: 'error-prone',
 		name: 'Error Prone',
-		summary:
-			'A bug detection tool for Java code, integrated into the Java compiler',
+		summary: 'A bug detection tool for Java code, integrated into the Java compiler',
 		startsWith: 'e',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -543,8 +524,7 @@ var data = [
 	{
 		id: 'three-things-today',
 		name: 'three-things-today',
-		summary:
-			'Simple Android application to encourage writing down three things that happened today',
+		summary: 'Simple Android application to encourage writing down three things that happened today',
 		startsWith: 't',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -568,8 +548,7 @@ var data = [
 	{
 		id: 'zopfli',
 		name: 'Zopfli',
-		summary:
-			'Zopfli is a compression library designed to be very good, but slow',
+		summary: 'Zopfli is a compression library designed to be very good, but slow',
 		startsWith: 'z',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -581,8 +560,7 @@ var data = [
 	{
 		id: 'nomulus',
 		name: 'Nomulus',
-		summary:
-			'Top-level domain name registry software on Google Cloud Platform',
+		summary: 'Top-level domain name registry software on Google Cloud Platform',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/nomulus/logo.png?rs=AGWjSYShX8xJaBTRRdVIqKbNOCR-6TH4vg&sqp=-oaymwEICEwQTCAAUAEIltCMygU',
 		iconUrlMedium:
@@ -616,8 +594,7 @@ var data = [
 	{
 		id: 'touchtime',
 		name: 'TouchTime',
-		summary:
-			'Tells the time through vibration patterns on an Android smartwatch',
+		summary: 'Tells the time through vibration patterns on an Android smartwatch',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/touchtime/logo.png?rs=AGWjSYR3eUmDyzerjM2qv6k-BnS1Jb8dLA&sqp=-oaymwEICEwQTCAAUAEIt9CMygU',
 		iconUrlMedium:
@@ -669,12 +646,9 @@ var data = [
 	{
 		id: 'appauth',
 		name: 'AppAuth',
-		summary:
-			'Native App SDK for OAuth 2.0 and OpenID Connect implementing modern best practices',
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/appauth/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/appauth/logo.svg',
+		summary: 'Native App SDK for OAuth 2.0 and OpenID Connect implementing modern best practices',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/appauth/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/appauth/logo.svg',
 		primaryColor: '#2bace2',
 		startsWith: 'a',
 		fallbackColor: '#34A853',
@@ -687,8 +661,7 @@ var data = [
 	{
 		id: 'jterm-cswithandroid',
 		name: 'JTerm at Smith 2017 Course Materials: CS With Android',
-		summary:
-			'Starter code and example solutions for JTerm course, CS with Android, in January 2017',
+		summary: 'Starter code and example solutions for JTerm course, CS with Android, in January 2017',
 		startsWith: 'j',
 		fallbackColor: '#34A853',
 		RGB: {
@@ -734,8 +707,7 @@ var data = [
 	{
 		id: 'flutter',
 		name: 'Flutter',
-		summary:
-			'Build high-fidelity apps for iOS and Android from a single codebase',
+		summary: 'Build high-fidelity apps for iOS and Android from a single codebase',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/flutter/logo.png?rs=AGWjSYTe_6TsIt5_u5DE_DfSQeK_fUjDEg&sqp=-oaymwEICEwQTCAAUAEI88-MygU',
 		iconUrlMedium:
@@ -754,10 +726,8 @@ var data = [
 		name: 'HSTS Preload List',
 		summary:
 			'The submission website for the Chromium-maintained HSTS preload list, which is used by major browsers to hardcode HTTPS-only sites',
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/hstspreload/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/hstspreload/logo.svg',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/hstspreload/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/hstspreload/logo.svg',
 		primaryColor: '#1ac222',
 		startsWith: 'h',
 		fallbackColor: '#FBBC05',
@@ -841,8 +811,7 @@ var data = [
 	{
 		id: 'oppia',
 		name: 'Oppia',
-		summary:
-			'A tool for collaboratively creating and sharing interactive online lessons',
+		summary: 'A tool for collaboratively creating and sharing interactive online lessons',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/oppia/logo.png?rs=AGWjSYS9x-AN3LCJ3wkrKb-cwmXikQj0DA&sqp=-oaymwEICEwQTCAAUAEImNCMygU',
 		iconUrlMedium:
@@ -884,10 +853,8 @@ var data = [
 		id: 'kubernetes',
 		name: 'Kubernetes',
 		summary: 'Automated container deployment, scaling, and management',
-		iconUrlSmall:
-			'https://www.gstatic.com/opensource/project-images/kubernetes/logo.svg',
-		iconUrlMedium:
-			'https://www.gstatic.com/opensource/project-images/kubernetes/logo.svg',
+		iconUrlSmall: 'https://www.gstatic.com/opensource/project-images/kubernetes/logo.svg',
+		iconUrlMedium: 'https://www.gstatic.com/opensource/project-images/kubernetes/logo.svg',
 		primaryColor: '#326ce5',
 		startsWith: 'k',
 		fallbackColor: '#4285F4',
@@ -900,8 +867,7 @@ var data = [
 	{
 		id: 'material-components-ios',
 		name: 'Material Components for iOS',
-		summary:
-			'Modular and customizable Material Design UI components for iOS',
+		summary: 'Modular and customizable Material Design UI components for iOS',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/material-components-ios/logo.png?rs=AGWjSYRSa9YBNIb5U6Oi4ZebGiTyfIPQuA&sqp=-oaymwEICEwQTCAAUAEIk9CMygU',
 		iconUrlMedium:
@@ -918,8 +884,7 @@ var data = [
 	{
 		id: 'genomewarp',
 		name: 'GenomeWarp',
-		summary:
-			'GenomeWarp translates genetic variants from one genome assembly version to another',
+		summary: 'GenomeWarp translates genetic variants from one genome assembly version to another',
 		startsWith: 'g',
 		fallbackColor: '#4285F4',
 		RGB: {
@@ -1041,8 +1006,7 @@ var data = [
 	{
 		id: 'permission.site',
 		name: 'permission.site',
-		summary:
-			'A site to test the interaction of web APIs and browser permissions',
+		summary: 'A site to test the interaction of web APIs and browser permissions',
 		iconUrlSmall:
 			'https://www.gstatic.com/opensource/project-images/permission.site/logo.png?rs=AGWjSYQ1qvWvz5pHYPqfIniSyTJ4u6TXsg&sqp=-oaymwEICEwQTCAAUAEIn9CMygU',
 		iconUrlMedium:
@@ -1067,7 +1031,7 @@ class Graph extends Component {
 	render() {
 		return (
 			<div className='graph'>
-				<h3 className="graph-title">React Circular Graph</h3>
+				<h3 className='graph-title'>React Circular Graph</h3>
 				<ReactCircularGraph
 					width={720}
 					height={720}
@@ -1079,14 +1043,17 @@ class Graph extends Component {
 					}}
 				/>
 				<Circular />
-				<div className="description">
-					JavaScript version available on 
-						<a 
-							href="https://github.com/anishmprasad/circular-knowledge-graph" 
-							className=""
-							target="_blank"
-						rel="noopener noreferrer"
-						> Circular Knowlege Graph</a>
+				<div className='description'>
+					JavaScript version available on
+					<a
+						href='https://github.com/anishmprasad/circular-knowledge-graph'
+						className=''
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						{' '}
+						Circular Knowlege Graph
+					</a>
 				</div>
 			</div>
 		);

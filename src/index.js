@@ -5,6 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import configureStore from './store/configureStore';
 import Root from './Root';
+
 const store = configureStore();
 const rootElement = document.getElementById('root');
 
@@ -14,10 +15,6 @@ render(<Root store={store} />, rootElement);
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-
-
-
 
 // import React from 'react';
 // import { render } from 'react-dom';
