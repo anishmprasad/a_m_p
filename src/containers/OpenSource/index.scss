@@ -1,10 +1,10 @@
 // devices
-$device-x-small:"screen and (max-width: 375px)";
-$device-small:"screen and (max-width: 767px)";
-$device-small-landscape: "screen and (max-width: 767px) and (orientation: landscape)";
-$device-medium: "screen and (max-width: 1023px) and (min-width:768px)";
-$device-medium-small: "screen and ( max-width: 1023px)";
-$device-large:"screen and (min-width: 1024px)";
+$device-x-small: 'screen and (max-width: 375px)';
+$device-small: 'screen and (max-width: 767px)';
+$device-small-landscape: 'screen and (max-width: 767px) and (orientation: landscape)';
+$device-medium: 'screen and (max-width: 1023px) and (min-width:768px)';
+$device-medium-small: 'screen and ( max-width: 1023px)';
+$device-large: 'screen and (min-width: 1024px)';
 
 // fonts
 // $font-serif: "Verdana",sans-serif;
@@ -12,161 +12,162 @@ $device-large:"screen and (min-width: 1024px)";
 
 // colors
 $dark: black;
-$mid: rgba( $dark, .65 );
-$mid-light: rgba( $dark, .15 );
+$mid: rgba($dark, 0.65);
+$mid-light: rgba($dark, 0.15);
 $light: white;
 
 $site-bg: $light; //#FCFCFC;
-$nav-bg: rgba( $light, .9 );
-$card-shadow: rgba( $dark, .06 );
+$nav-bg: rgba($light, 0.9);
+$card-shadow: rgba($dark, 0.06);
 
 // layout
 $gutter: 3rem;
 $box: 75%;
 
-@mixin box ($width){
-    padding: 0 $gutter;
-    height: 100%;
-    position: relative;
-    max-width: $width;
-    margin: 0 auto;    
+@mixin box($width) {
+	padding: 0 $gutter;
+	height: 100%;
+	position: relative;
+	max-width: $width;
+	margin: 0 auto;
 }
 
 .opensource {
-    width: 1180px;
-    margin: 80px auto 0 auto;
+	width: 1180px;
+	margin: 80px auto 0 auto;
 }
-
 
 img {
-    display: block;
-    width: 100%;
-  }
-
-.box{
-    @include box(1240px);
-    background: $site-bg;
+	display: block;
+	width: 100%;
 }
 
-h1, h2, h3 {
-  font-weight: 300;
-  line-height: 1.25;
+.box {
+	@include box(1240px);
+	background: $site-bg;
 }
 
-h1{
-  // font-family:$font-serif;
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	line-height: 1.25;
 }
 
-h2{
-  // font-family:$font-serif;
-  font-size: 1.85rem;
+h1 {
+	// font-family:$font-serif;
 }
 
-h3{
-  font-size: 1.4rem;
+h2 {
+	// font-family:$font-serif;
+	font-size: 1.85rem;
+}
+
+h3 {
+	font-size: 1.4rem;
 }
 
 a {
-    color: $dark;
-    text-decoration: underline;
-  }
-  
-  a:hover, a:focus {
-    text-decoration: none;
-  }
+	color: $dark;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
 
 .grid-flex {
-    display: flex;
-    flex-wrap: wrap;
-    @mixin column($width) {
-        flex: 0 1 calc(#{$width} - #{$gutter});
-        @media #{$device-medium} {
-            flex: 0 1 calc(50% - #{$gutter}); 
-        }
-        @media #{$device-small} {
-            flex: 0 1 100%; 
-        }
-    }
-    
-    // .cols-1{
-    //     @include column("100%");
-    // }
-    
-    .cols-2{
-        @include column("50%");
-    }
-    
-    .cols-3{
-        @include column("33%");
-    }
-    
-    .cols-4{
-        @include column("25%");
-    }
-    
-    .cols-5{
-        @include column("20%");
-    }
-    
-    .cols-6{
-        @include column("16%");
-    }
+	display: flex;
+	flex-wrap: wrap;
+	@mixin column($width) {
+		flex: 0 1 calc(#{$width} - #{$gutter});
+		@media #{$device-medium} {
+			flex: 0 1 calc(50% - #{$gutter});
+		}
+		@media #{$device-small} {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .cols-1{
+	//     @include column("100%");
+	// }
+
+	.cols-2 {
+		@include column('50%');
+	}
+
+	.cols-3 {
+		@include column('33%');
+	}
+
+	.cols-4 {
+		@include column('25%');
+	}
+
+	.cols-5 {
+		@include column('20%');
+	}
+
+	.cols-6 {
+		@include column('16%');
+	}
 }
 
 $transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
 
 .card {
-    position: relative;
-    margin: calc(#{$gutter} / 2) calc(#{$gutter} / 2);
-    background: $light;
-    border-radius: 10px;
-    overflow:hidden;
-    box-shadow: 0 15px 25px $mid-light;
-    transition: $transition;	
-    &:hover{
-        transform: translate(0,-20px);
-        transition:$transition;
-        box-shadow: 0 45px 45px $card-shadow;
-        transition: $transition;
-    }
-    a {
-        text-decoration: none;
-    }
-    h3{
-        height:55px;
-      margin:0;
-    }
-    p{
-        margin-bottom: $gutter;
-    }
-    hr{
-        margin: calc(#{$gutter} / 2) 0;
-    }
-    .content {
-        padding: calc(#{$gutter} / 2);
-        small{
-            color: $mid;
-            text-transform: uppercase;
-            font-size: .75rem;
-          .tag{
-              margin-right:1rem;
-              cursor: pointer;
-            }
-          }
-    }
+	position: relative;
+	margin: calc(#{$gutter} / 2) calc(#{$gutter} / 2);
+	background: $light;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 15px 25px $mid-light;
+	transition: $transition;
+	&:hover {
+		transform: translate(0, -20px);
+		transition: $transition;
+		box-shadow: 0 45px 45px $card-shadow;
+		transition: $transition;
+	}
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		height: 55px;
+		margin: 0;
+	}
+	p {
+		margin-bottom: $gutter;
+	}
+	hr {
+		margin: calc(#{$gutter} / 2) 0;
+	}
+	.content {
+		padding: calc(#{$gutter} / 2);
+		small {
+			color: $mid;
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			.tag {
+				margin-right: 1rem;
+				cursor: pointer;
+			}
+		}
+	}
 }
 
-.card-link{
-    font-size: 1.15rem;
-    line-height: 1.75;
-    background: $light;
+.card-link {
+	font-size: 1.15rem;
+	line-height: 1.75;
+	background: $light;
 
-    .icon-link{
-        text-align:right; 
-        color: $mid;
-        bottom: 1rem;
-        right: 1rem;
-        position: absolute;
-    }
+	.icon-link {
+		text-align: right;
+		color: $mid;
+		bottom: 1rem;
+		right: 1rem;
+		position: absolute;
+	}
 }
-

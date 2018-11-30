@@ -9,15 +9,8 @@ import { requestOpenSource } from '../../actions/OpenSource';
 import InlineLoader from '../../components/InlineLoader';
 
 class OpenSource extends Component {
-	state = {
-		opensource: []
-	};
 	componentWillMount() {
 		this.props.requestOpenSource(2);
-		// .then(response => {
-		// 	this.setState({ opensource: response });
-		// 	console.log('fetchOpenSource', response);
-		// });
 	}
 	projectOnclick = (projecturl, type = null) => {
 		if (type === 'demo') {
