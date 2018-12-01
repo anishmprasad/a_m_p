@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Graph from 'vis-react';
+
 import './index.scss';
 
 export default class VisReact extends Component {
@@ -9,4 +11,7 @@ export default class VisReact extends Component {
 }
 VisReact.propTypes = {
 	data: PropTypes.array
+};
+VisReact.defaultProps = {
+	data: null
 };
