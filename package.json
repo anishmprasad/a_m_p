@@ -31,7 +31,6 @@
 		"gsap": "^2.0.2",
 		"html-webpack-plugin": "4.0.0-alpha.2",
 		"identity-obj-proxy": "3.0.0",
-		"jest": "23.6.0",
 		"jest-pnp-resolver": "1.0.1",
 		"jest-resolve": "23.6.0",
 		"mini-css-extract-plugin": "0.4.3",
@@ -70,7 +69,8 @@
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
 		"test": "node scripts/test.js",
-		"flow": "flow"
+		"flow": "flow --show-all-errors",
+		"postinstall": "$(npm bin)/flow-typed install"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -131,6 +131,8 @@
 		"babel-cli": "^6.26.0",
 		"babel-preset-flow": "^6.23.0",
 		"flow-bin": "^0.87.0",
-		"flow-typed": "^2.5.1"
+		"flow-typed": "^2.5.1",
+		"jest": "^23.6.0",
+		"jest-cli": "^20.0.4"
 	}
 }
