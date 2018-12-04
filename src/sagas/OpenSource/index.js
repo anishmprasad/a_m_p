@@ -42,7 +42,7 @@ import { gsdata } from '../../Utils';
 // 	yield all([takeLatest(ActionTypes.SWITCH_MENU, switchMenu)]);
 // }
 
-export function fetchOpenSourceApi(id = 1) {
+export function fetchOpenSourceApi(id = 1): Iterable<any> {
 	const url = `https://spreadsheets.google.com/feeds/list/1vsuEOL0F6UdHU75kbm36XAvIQlVu-mgcnNhn0pI72Rg/${id}/public/values?alt=json`;
 	return axios.get(url).then(response => gsdata(response.data));
 	// return function(dispatch) {
@@ -59,7 +59,7 @@ export function fetchOpenSourceApi(id = 1) {
 	// };
 }
 
-export function* fetchOpenSource(sourceKey) {
+export function* fetchOpenSource(sourceKey): Iterable<any> {
 	// yield put(requestOpenSource(opensource));
 	const projects = yield call(fetchOpenSourceApi, sourceKey.id);
 	yield put(receiveOpenSource(projects));
@@ -77,7 +77,7 @@ export function* fetchOpenSource(sourceKey) {
 // 	yield fork(fetchOpenSource);
 // }
 // Saga function that is initiated in the beginning to be able to listen to REQUEST_OPENSOURCE action
-export default function* root() {
+export default function* root(): Iterable<any> {
 	yield all([takeLatest(REQUEST_OPENSOURCE, fetchOpenSource)]);
 }
 
