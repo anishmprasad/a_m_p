@@ -9,6 +9,6 @@ import Header from './Header';
 /**
  * rootSaga
  */
-export default function* root() {
+export default function* root(): any {
 	yield all([fork(OpenSource), fork(Graph), fork(Header)]);
 }

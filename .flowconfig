@@ -2,6 +2,9 @@
 .*/node_modules/.*
 .*/build/.*
 .*/old_structure/.*
+.*/build-old/.*
+.*/config/.*
+.*/scripts/.*
 
 [include]
 
@@ -23,5 +26,7 @@ esproposal.class_instance_fields=enable
 
 suppress_type=$FlowIssue
 suppress_type=$FlowFixMe
+
+munge_underscores=true
 
 [strict]
