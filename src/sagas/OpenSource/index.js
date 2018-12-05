@@ -42,7 +42,7 @@ import { gsdata } from '../../Utils';
 // 	yield all([takeLatest(ActionTypes.SWITCH_MENU, switchMenu)]);
 // }
 
-export function fetchOpenSourceApi(id = 1): Generator<any, void, any> {
+export function fetchOpenSourceApi(id: number = 1): Generator<any, void, any> {
 	const url = `https://spreadsheets.google.com/feeds/list/1vsuEOL0F6UdHU75kbm36XAvIQlVu-mgcnNhn0pI72Rg/${id}/public/values?alt=json`;
 	return axios.get(url).then(response => gsdata(response.data));
 	// return function(dispatch) {
