@@ -14,28 +14,22 @@ import { ActionTypes } from 'constants/index';
  * @param {Object} action
  *
  */
-export function* getRepos({ payload }) {
+export function* getRepos({ payload }): Generator<any, void, any> {
 	try {
 		const response = yield call(
 			request,
 			`https://api.github.com/search/repositories?q=${payload.query}&sort=stars`
 		);
-		yield put({
-			type: ActionTypes.GITHUB_GET_REPOS_SUCCESS,
-			payload: { data: response.items }
-		});
+		yield put({ type: ActionTypes.GITHUB_GET_REPOS_SUCCESS, payload: { data: response.items } });
 	} catch (err) {
 		/* istanbul ignore next */
-		yield put({
-			type: ActionTypes.GITHUB_GET_REPOS_FAILURE,
-			payload: err
-		});
+		yield put({ type: ActionTypes.GITHUB_GET_REPOS_FAILURE, payload: err });
 	}
 }
 
 /**
  * GitHub Sagas
  */
-export default function* root() {
+export default function* root(): Generator<any, void, any> {
 	yield all([takeLatest(ActionTypes.GITHUB_GET_REPOS, getRepos)]);
 }
