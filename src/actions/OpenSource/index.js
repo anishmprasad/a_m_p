@@ -5,9 +5,9 @@ import { REQUEST_OPENSOURCE, RECEIVE_OPENSOURCE } from '../../actionTypes/OpenSo
 
 // import { createActionWithTypeAndPayload } from '../ActionTemplates';
 
-export function requestOpenSource(id) {
+export function requestOpenSource(id: number) {
 	return { type: REQUEST_OPENSOURCE, id };
 }
-export function receiveOpenSource(projects) {
+export function receiveOpenSource(projects: Object) {
 	return { type: RECEIVE_OPENSOURCE, projects };
 }
