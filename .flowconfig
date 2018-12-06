@@ -29,4 +29,6 @@ suppress_type=$FlowFixMe
 
 munge_underscores=true
 
+module.name_mapper.extension='scss' -> 'empty/object'
+
 [strict]

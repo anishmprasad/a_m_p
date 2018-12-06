@@ -59,7 +59,7 @@ export function fetchOpenSourceApi(id: number = 1): Generator<any, void, any> {
 	// };
 }
 
-export function* fetchOpenSource(sourceKey): Generator<any, void, any> {
+export function* fetchOpenSource(sourceKey: Object): Generator<any, void, any> {
 	// yield put(requestOpenSource(opensource));
 	const projects = yield call(fetchOpenSourceApi, sourceKey.id);
 	yield put(receiveOpenSource(projects));
