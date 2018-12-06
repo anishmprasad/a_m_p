@@ -70,7 +70,7 @@
 		"build": "node scripts/build.js",
 		"test": "node scripts/test.js",
 		"flow": "flow --show-all-errors",
-		"postinstall": "$(npm bin)/flow-typed install"
+		"flowtype":"npm install -g flow-typed && flow-typed update"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
