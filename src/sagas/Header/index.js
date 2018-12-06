@@ -14,7 +14,7 @@ export function initialFetchApi(id: number = 1): Generator<any, void, any> {
 	return axios.get(url).then(response => gsdata(response.data));
 }
 
-export function* initialFetch(node: json): Generator<any, void, any> {
+export function* initialFetch(node: Object): Generator<any, void, any> {
 	const initialFetch = yield call(initialFetchApi, node.id);
 	yield put(receiveInitialFetch(initialFetch));
 }
