@@ -1,8 +1,8 @@
 // Only type actions
-export const createActionWithType = type => ({ type });
+export const createActionWithType = (type: string) => ({ type });
 
 // type and payload actions
-export const createActionWithTypeAndPayload = (type, payload) => ({
-  type,
-  payload
+export const createActionWithTypeAndPayload = (type: string, payload: Object) => ({
+	type,
+	payload
 });
