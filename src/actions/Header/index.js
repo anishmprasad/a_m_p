@@ -9,10 +9,10 @@ import { REQUEST_INITIALFETCH, RECEIVE_INITIALFETCH } from '../../actionTypes/He
 
 // import { createActionWithTypeAndPayload } from '../ActionTemplates';
 
-export function requestInitialFetch(payload: Object) {
+export function requestInitialFetch(payload) {
 	return { type: REQUEST_INITIALFETCH, payload };
 }
-export function receiveInitialFetch(payload: Object) {
+export function receiveInitialFetch(payload) {
 	return { type: RECEIVE_INITIALFETCH, payload };
 }
 

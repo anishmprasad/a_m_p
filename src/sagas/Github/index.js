@@ -14,7 +14,7 @@ import { ActionTypes } from 'constants/index';
  * @param {Object} action
  *
  */
-export function* getRepos({ payload }): Generator<any, void, any> {
+export function* getRepos({ payload }) {
 	try {
 		const response = yield call(
 			request,
@@ -30,6 +30,6 @@ export function* getRepos({ payload }): Generator<any, void, any> {
 /**
  * GitHub Sagas
  */
-export default function* root(): Generator<any, void, any> {
+export default function* root() {
 	yield all([takeLatest(ActionTypes.GITHUB_GET_REPOS, getRepos)]);
 }
