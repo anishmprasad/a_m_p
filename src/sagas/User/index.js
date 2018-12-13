@@ -11,7 +11,7 @@ import { ActionTypes } from 'constants/index';
 /**
  * Login
  */
-export function* login(): Generator<any, void, any> {
+export function* login() {
 	try {
 		yield call(delay, 400);
 
@@ -25,7 +25,7 @@ export function* login(): Generator<any, void, any> {
 /**
  * Logout
  */
-export function* logout(): Generator<any, void, any> {
+export function* logout() {
 	try {
 		yield call(delay, 200);
 
@@ -39,6 +39,6 @@ export function* logout(): Generator<any, void, any> {
 /**
  * User Sagas
  */
-export default function* root(): Generator<any, void, any> {
+export default function* root() {
 	yield all([takeLatest(ActionTypes.USER_LOGIN, login), takeLatest(ActionTypes.USER_LOGOUT, logout)]);
 }
