@@ -1022,9 +1022,6 @@ var data = [
 	}
 ];
 class Graph extends Component {
-	selectedProjectChanged = object => {
-		this.props.isProjectChanged(object);
-	};
 	shouldComponentUpdate() {
 		return false;
 	}
@@ -1039,7 +1036,7 @@ class Graph extends Component {
 					config={config}
 					selectedNode={node => this.props.CanvasData(node)}
 					selectedProjectChanged={object => {
-						this.selectedProjectChanged(object);
+						this.props.isProjectChanged(object);
 					}}
 				/>
 				<Circular />
