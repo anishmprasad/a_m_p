@@ -6,23 +6,6 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className='home'>
-				{/* <section class="container">
-          <h1 class="title">
-            <span>Hi, nice</span>
-            <span>to see</span>
-            <span>you here</span>
-          </h1>
-          
-          <h2 class="title">
-            <span>I'm</span>
-            <span>Anish M Prasad</span>
-          </h2>
-          <h3 class="title">
-            <span>I Love </span>
-            <span>to create</span>
-            <span>things</span>
-          </h3>
-        </section> */}
 				<div className='section definition'>
 					<div className='grid-full-width'>
 						<dl>
