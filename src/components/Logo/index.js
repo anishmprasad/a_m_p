@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.scss';
 
-function Logo(props) {
+export default function Logo(props) {
 	return (
 		<main>
-			<div class='logo'>
+			<div className='logo'>
 				<svg
 					version='1.1'
 					id='path_logo'
@@ -55,10 +55,6 @@ function Logo(props) {
 					/>
 				</svg>
 			</div>
-
-			<p class='email-address'>
-				<a href='http://web3canvas.com'>http://web3canvas.com</a>
-			</p>
 		</main>
 	);
 }
