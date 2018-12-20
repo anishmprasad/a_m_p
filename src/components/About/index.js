@@ -427,6 +427,8 @@ export default class About extends Component {
 		// 	        .attr('x', width + margins.left + 90)
 		// 	        .attr('y', i * 24 + 6);
 		// });
+
+		
 	}
 	render() {
 		return <div className='about'>About Me !</div>;
