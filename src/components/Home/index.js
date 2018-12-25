@@ -35,20 +35,3 @@ export default class Home extends Component {
 		);
 	}
 }
-
-// <p>Codepen</span> </p>
-//   <p>I'm Zayn</p>
-//   <p><span class="#">Let's Code</span></p>
-//   <p>I like web development</p>
-//   <p>I love coding</p>
-//   <p>PHP</p>
-//   <p>PYTHON</p>
-//   <p>JAVASCRIPT</p>
-//   <p>CSS</p>
-//   <p>Simple Landing Page</p>
-//   <p>Ruby</p>
-// 	<p>Most Powerful Typer</p>
-// 	<p>Codepen</p>
-// 	<p>Apple</p>
-// 	<p>Facebook</p>
-// 	<p>You can still add more</p>

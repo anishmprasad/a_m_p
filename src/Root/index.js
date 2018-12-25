@@ -4,10 +4,7 @@ import Router from '../Router';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './root.scss';
 
-type props = {
-	store: Object
-};
-export default class Root extends Component<props> {
+export default class Root extends Component {
 	render() {
 		return (
 			<Provider store={this.props.store}>
