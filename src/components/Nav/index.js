@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
-export default function Nav(props: Object) {
+export default function Nav(props) {
 	return (
 		<ul className='menu'>
 			<li className='menu-list'>

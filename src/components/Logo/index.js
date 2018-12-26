@@ -9,12 +9,12 @@ export default function Logo(props) {
 					version='1.1'
 					id='path_logo'
 					xmlns='http://www.w3.org/2000/svg'
-					xmlns:xlink='http://www.w3.org/1999/xlink'
+					xmlnsXlink='http://www.w3.org/1999/xlink'
 					x='0px'
 					y='0px'
 					viewBox='0 0 93 78'
 					enable-background='new 0 0 93 78'
-					xml:space='preserve'
+					xmlSpace='preserve'
 				>
 					<path
 						fill='none'
