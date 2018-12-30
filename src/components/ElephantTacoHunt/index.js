@@ -128,11 +128,9 @@ fill = "#b5b1a8"
 stroke = "#000"
 stroke - miterlimit = "10"
 stroke - width = ".5" / > < path d = "M167.4 142c0-2-11.7-3.6-28.2-4.3 1.9-.3 3.1-.6 3.1-1s-5.6-1.5-12.6-1.5h-1a17.2 17.2 0 0 0-6.9-5.9c1.9-.9 3.1-2 3.1-3.3v-.2c4.4-.8 7.5-2.8 7.5-5v-.1h6c11.5 0 20.8-.9 20.8-2s-9.3-2-20.8-2H137l.3-.4h.7c4.4 0 8.1-.7 8.1-1.5s-3.5-1.4-7.9-1.5v-.2c0-4-4.1-7.3-9.2-7.3a11.5 11.5 0 0 0-3 .4 4.2 4.2 0 0 0 .8-2.4c0-3.3-4.1-5.9-9.1-5.9a13.6 13.6 0 0 0-3.4.4v-.4a9.9 9.9 0 0 0-19.2-3.6 23.2 23.2 0 0 0-7.6-1.2 21.2 21.2 0 0 0-12.9 4.1c-1.2-2.2-4.2-3.8-7.8-4A16 16 0 1 0 35.2 90v.7a9.1 9.1 0 0 0-5.1 10.8c-7.6 1.5-13.2 6-13.2 11.4a9.3 9.3 0 0 0 3.4 6.8c-4.6 4.2-7.2-1.9-7.2 3.4 0 7.4 5.2 14.1 13.7 19.1a4.9 4.9 0 0 0-1.8 3.5c0 4 6.1 7.2 13.7 7.2a20 20 0 0 0 10.8-2.8 95.6 95.6 0 0 0 16.7 1.6l7.5-.3c.7 2 4.7 3.4 9.5 3.2s8.5-2 9.1-4a28.9 28.9 0 0 0 16 4.4 28.9 28.9 0 0 0 16-4.4l3 .3c4.9 0 8.8-2 8.9-4.4 18.1-.6 31.2-2.4 31.2-4.5z"
-fill = "#000" / > < /svg>
+fill = "#000" / > </svg>
 
-  <
-  div id = "app" > < /div> <
-  /div>
+  <div id = "app" > </div> </div>
 
 
 
@@ -214,20 +212,17 @@ fill = "#000" / > < /svg>
     render() {
       const source = this.state.isMuted ? 'sounds.svg' : 'mute.svg',
         url = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/${source}`;
-      return ( <
-        div >
-        <
-        div className = "mutebutton"
+      return ( <div>
+        <div className = "mutebutton"
         onClick = {
           this._handleSoundChange
         } >
-        <
-        img src = {
+        <img src = {
           url
         }
-        /> <
-        /div> <
-        Controls _updateScore = {
+        /> </div> 
+        <Controls 
+        _updateScore = {
           this._updateScore
         }
         isPlaying = {
@@ -236,16 +231,16 @@ fill = "#000" / > < /svg>
         _isGameOver = {
           this._isGameOver
         }
-        /> <
-        HeartMeter score = {
+        /> 
+        <HeartMeter score = {
           this.state.score
         }
-        /> <
-        Opener startGame = {
+        /> 
+        <Opener startGame = {
           this.startGame
         }
-        /> <
-        Won _isGameWon = {
+        /> 
+        <Won _isGameWon = {
           this._isGameWon
         }
         startGame = {
@@ -254,15 +249,14 @@ fill = "#000" / > < /svg>
         finalScore = {
           this.state.finalScore
         }
-        /> <
-        Lost _isGameLost = {
+        /> 
+        <Lost _isGameLost = {
           this._isGameLost
         }
         startGame = {
           this.startGame
         }
-        /> <
-        /div>
+        /> </div>
       )
     }
   });
@@ -485,16 +479,15 @@ fill = "#000" / > < /svg>
     },
 
     render() {
-      return ( <
-        div >
-        <
-        svg className = "controls controls-top"
+      return ( <div >
+        <svg 
+        className = "controls controls-top"
         id = "touch-controls"
         xmlns = "http://www.w3.org/2000/svg"
         viewBox = "0 0 210.8 101.5"
         aria - labelledby = "title" >
-        <
-        title id = "controls" > controls < /title> <
+        <title 
+        id = "controls" > controls </title> <
         rect x = "120.2"
         y = "44.7"
         width = "59.3"
@@ -503,14 +496,14 @@ fill = "#000" / > < /svg>
         ry = "15"
         transform = "rotate(-180 146.45 66.7)"
         fill = "#006666" / >
-        <
-        g id = "up"
+        <g 
+        id = "up"
         onClick = {
           this._elephantDirection.bind(this, "up")
         } > < path fill = "#fff"
         d = "M150.9 49.5l-7.1-4.6-7.1 4.6h2.9V57h6.2v-7.5h5.1z" / > < path d = "M138.7 50.4h-4.4L144 44l8.4 5.5-1.4.9h-3.1v6.5l-1.4.9h-7.8zm-1.3-.9h2.6v7.4h5.2v-7.4h2.6l-5.2-3.4z"
-        fill = "#000" / > < /g> <
-        g id = "right"
+        fill = "#000" / > </g> 
+        <g id = "right"
         onClick = {
           this._elephantDirection.bind(this, "right")
         } > < path fill = "#fff"
