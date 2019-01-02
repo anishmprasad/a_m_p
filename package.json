@@ -68,9 +68,7 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "node scripts/test.js",
-		"flow": "flow --show-all-errors",
-		"flowtype": "npm install -g flow-typed && flow-typed update"
+		"test": "node scripts/test.js"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -129,9 +127,6 @@
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
-		"babel-preset-flow": "^6.23.0",
-		"flow-bin": "^0.87.0",
-		"flow-typed": "^2.5.1",
 		"jest": "^23.6.0",
 		"jest-cli": "^20.0.4"
 	}
