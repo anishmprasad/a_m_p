@@ -7,7 +7,6 @@ class Circular extends Component {
 		show: true
 	};
 	render() {
-		// const { summary, name } = this.props.canvas
 		if (this.props.canvas) {
 			return (
 				<div
@@ -37,13 +36,6 @@ function mapStateToProps(state) {
 		selectedProjectChanged: Graph && Graph.isProjectChanged
 	};
 }
-
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators(
-//     { CanvasData },
-//     dispatch
-//   );
-// }
 
 export default connect(
 	mapStateToProps,
