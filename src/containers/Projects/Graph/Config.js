@@ -1,0 +1,12 @@
+export const config = {
+	ENABLE_ERROR_REPORTING: true,
+	LIST_PAGE_SIZE: 48,
+	EXPLORE_PAGE_SIZE: 80,
+	MOBILE_WIDTH: 720,
+	COLORS: {
+		GREEN: '#34A853',
+		RED: '#EA4335',
+		BLUE: '#4285F4',
+		YELLOW: '#FBBC05'
+	}
+};
