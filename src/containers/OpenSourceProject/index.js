@@ -1,20 +1,18 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import constants from './constants'
+import constants from './constants';
 import InlineLoader from '../../components/InlineLoader';
 
-
 class OpenSourceProject extends Component {
-
 	state = {
 		components: []
 	};
 
-	mapProject(project){
-	  return constants[project]
-  }
-  
+	mapProject(project) {
+		return constants[project];
+	}
+
 	addComponent = async type => {
 		console.log(`Loading ${type} component...`);
 
@@ -30,16 +28,14 @@ class OpenSourceProject extends Component {
 	};
 
 	async componentWillMount() {
-    this.addComponent(this.mapProject(this.props.match.params.project));
+		this.addComponent(this.mapProject(this.props.match.params.project));
 	}
 
 	render() {
 		const { components } = this.state;
-    if (components.length === 0) return <InlineLoader />;
+		if (components.length === 0) return <InlineLoader />;
 
-		const componentsElements = components.map(Component => (
-			<Component key={Math.random()} />
-		));
+		const componentsElements = components.map(Component => <Component key={Math.random()} />);
 
 		return <div className='project'>{componentsElements}</div>;
 	}
