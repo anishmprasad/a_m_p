@@ -26,7 +26,7 @@ export default function Logo(props) {
 						stroke-dasharray='247.04 247.04'
 						stroke-dashoffset='-247.04'
 						opacity='0'
-						style='opacity: 1; stroke-dashoffset: 0px;'
+						style={{ opacity: 1, strokeDashOffset: 0 }}
 					/>
 					<path
 						fill='none'
@@ -38,7 +38,7 @@ export default function Logo(props) {
 						stroke-dasharray='47.40 47.40'
 						stroke-dashoffset='47.40'
 						opacity='0'
-						style='opacity: 1; stroke-dashoffset: 0px;'
+						style={{ opacity: 1, strokeDashOffset: 0 }}
 					/>
 					<path
 						fill='none'
@@ -51,7 +51,7 @@ export default function Logo(props) {
 						stroke-dasharray='93.107 93.107'
 						stroke-dashoffset='-93.107'
 						opacity='0'
-						style='opacity: 1; stroke-dashoffset: 0px;'
+						style={{ opacity: 1, strokeDashOffset: 0 }}
 					/>
 				</svg>
 			</div>
