@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { TweenMax, TimelineMax, Sine, Back } from 'gsap/TweenMax';
 
-// const { TransitionGroup } = React.addons;
-
 import map from '../../assets/images/persp-map.gif';
 import blog from '../../assets/images/blog-hero2.jpg';
 import './index.scss';
