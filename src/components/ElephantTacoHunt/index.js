@@ -479,16 +479,18 @@ fill = "#000" / > </svg>
     },
 
     render() {
-      return ( <div >
+      return ( 
+        <div>
         <svg 
-        className = "controls controls-top"
-        id = "touch-controls"
-        xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 210.8 101.5"
-        aria - labelledby = "title" >
-        <title 
-        id = "controls" > controls </title> <
-        rect x = "120.2"
+          className = "controls controls-top"
+          id = "touch-controls"
+          xmlns = "http://www.w3.org/2000/svg"
+          viewBox = "0 0 210.8 101.5"
+          aria-labelledby = "title" >
+            <title 
+              id = "controls" > controls 
+            </title> 
+        <rect x = "120.2"
         y = "44.7"
         width = "59.3"
         height = "49.21"
@@ -496,96 +498,88 @@ fill = "#000" / > </svg>
         ry = "15"
         transform = "rotate(-180 146.45 66.7)"
         fill = "#006666" / >
-        <g 
-        id = "up"
+        <g id = "up"
         onClick = {
           this._elephantDirection.bind(this, "up")
-        } > < path fill = "#fff"
-        d = "M150.9 49.5l-7.1-4.6-7.1 4.6h2.9V57h6.2v-7.5h5.1z" / > < path d = "M138.7 50.4h-4.4L144 44l8.4 5.5-1.4.9h-3.1v6.5l-1.4.9h-7.8zm-1.3-.9h2.6v7.4h5.2v-7.4h2.6l-5.2-3.4z"
-        fill = "#000" / > </g> 
+        } > 
+        <path fill = "#fff"
+        d = "M150.9 49.5l-7.1-4.6-7.1 4.6h2.9V57h6.2v-7.5h5.1z" / > 
+        < path d = "M138.7 50.4h-4.4L144 44l8.4 5.5-1.4.9h-3.1v6.5l-1.4.9h-7.8zm-1.3-.9h2.6v7.4h5.2v-7.4h2.6l-5.2-3.4z"
+        fill = "#000" / > 
+        </g> 
         <g id = "right"
         onClick = {
           this._elephantDirection.bind(this, "right")
-        } > < path fill = "#fff"
+        } > 
+        <path fill = "#fff"
         d = "M160.8 71.6l4.6-7.5-4.6-7.6v3.1h-7.5v6.6h7.5v5.4z" / > < path d = "M159.9 58.6v-4.7l6.4 10.4-5.5 8.9-.9-1.5v-3.2h-6.5l-.9-1.5v-8.4zm.9-1.4V60h-7.4v5.6h7.4v2.8l3.4-5.6z"
-        fill = "#000" / > < /g> <
-        g id = "down"
+        fill = "#000" / > < /g> 
+        <g id = "down"
         onClick = {
           this._elephantDirection.bind(this, "down")
         } > < path fill = "#fff"
         d = "M150.9 78l-7.1 4.6-7-4.6h2.9v-7.5h6.2V78h5z" / > < path d = "M138.8 69.7h7.7l1.4.9v6.5h3l1.4.9-8.3 5.5-9.7-6.4h4.4zm3.9 11.7l5.2-3.4h-2.6v-7.4h-5.2V78h-2.6z"
-        fill = "#000" / > < /g> <
-        g id = "left"
+        fill = "#000" / > < /g> 
+        <g id = "left"
         onClick = {
           this._elephantDirection.bind(this, "left")
         } > < path fill = "#fff"
         d = "M126.2 71.6l-4.7-7.5 4.7-7.6v3.1h7.4v6.6h-7.4v5.4z" / > < path d = "M134.4 58.6v8.3l-.9 1.5H127v3.3l-.9 1.5-5.5-8.9 6.4-10.4v4.8zm-11.7 4.2l3.4 5.6v-2.8h7.4V60h-7.4v-2.8z"
-        fill = "#000" / > < /g> <
-        /svg> <
-        div className = "elephantContainer"
+        fill = "#000" / > </g> 
+        </svg> 
+        <div className = "elephantContainer"
         ref = "elContainer" >
-        <
-        Elephant / >
-        <
-        div className = "deWow wow"
-        ref = "deWow" > < /div> <
-        div className = "inWow wow"
-        ref = "inWow" > < /div> <
-        div className = "mWow wow"
-        ref = "mWow" > < /div> <
-        /div> <
-        div className = "tacoContainer"
+        <Elephant / >
+        <div className = "deWow wow"
+        ref = "deWow" > </div> 
+        <div className = "inWow wow"
+        ref = "inWow" > </div> 
+        <div className = "mWow wow"
+        ref = "mWow" > </div> 
+        </div> 
+        <div className = "tacoContainer"
         ref = "tContainer" >
-        <
-        div className = "taco"
-        ref = "taco" > < /div> <
-        /div> <
-        div className = "margaritaContainer"
+        <div className = "taco"
+        ref = "taco" > 
+        </div> 
+        </div> 
+        <div className = "margaritaContainer"
         ref = "mContainer" >
-        <
-        div className = "margarita"
-        ref = "margarita" > < /div> <
-        /div> <
-        div className = "textContainer"
+        <div className = "margarita"
+        ref = "margarita" > </div> 
+        </div> 
+        <div className = "textContainer"
         ref = "txContainer" >
-        <
-        Text ref = "textmessages" / >
-        <
-        /div> <
-        div className = "overlay overlayMargarita"
-        ref = "overlayM" > < /div> <
-        /div>
+        <Text ref = "textmessages" / >
+        </div> 
+        <div className = "overlay overlayMargarita"
+        ref = "overlayM" > </div> </div>
       )
     }
   });
 
   const HeartMeter = React.createClass({
     render() {
-      return ( <
-        div >
-        <
-        svg className = "heartmeter"
+      return ( 
+        <div >
+        <svg className = "heartmeter"
         xmlns = "http://www.w3.org/2000/svg"
         width = "250"
         height = "50"
         viewBox = "0 0 1741.8 395.6" >
-        <
-        path d = "M1741.8 197.7c0 109.3-89 197.8-198.8 197.8a198.6 198.6 0 0 1-158.5-78.4H11.2A11.2 11.2 0 0 1 0 305.9V89.5a11.2 11.2 0 0 1 11.2-11.1h1373.4A198.8 198.8 0 0 1 1543 0c109.8 0 198.8 88.5 198.8 197.7z"
+        <path d = "M1741.8 197.7c0 109.3-89 197.8-198.8 197.8a198.6 198.6 0 0 1-158.5-78.4H11.2A11.2 11.2 0 0 1 0 305.9V89.5a11.2 11.2 0 0 1 11.2-11.1h1373.4A198.8 198.8 0 0 1 1543 0c109.8 0 198.8 88.5 198.8 197.7z"
         fill = "#000" / >
-        <
-        path d = "M1591.8 127c-18.3 0-34.1 14.8-41.4 30.3-7.3-15.5-23.1-30.3-41.4-30.3a45.7 45.7 0 0 0-45.7 45.5c0 51.1 51.8 64.5 87.1 115.1 33.4-50.2 87.1-65.6 87.1-115.1a45.7 45.7 0 0 0-45.7-45.5z"
+        <path d = "M1591.8 127c-18.3 0-34.1 14.8-41.4 30.3-7.3-15.5-23.1-30.3-41.4-30.3a45.7 45.7 0 0 0-45.7 45.5c0 51.1 51.8 64.5 87.1 115.1 33.4-50.2 87.1-65.6 87.1-115.1a45.7 45.7 0 0 0-45.7-45.5z"
         fill = "#b29968" / >
-        <
-        rect x = "68.2"
+        <rect x = "68.2"
         y = "140.8"
         width = {
           this.props.score
         }
         height = "101.55"
         fill = "#9391aa" / >
-        <
-        /svg> <
-        /div>
+        </svg> 
+        </div>
       )
     }
   });
@@ -627,22 +621,17 @@ fill = "#000" / > </svg>
     render() {
       const final = this.props.finalScore,
         twitterURL = "https://twitter.com/intent/tweet?text=I+won+at+Elephant+Taco+Hunt+on+@CodePen!+My+score+was+" + final + "!+You+can+play+here:+https://codepen.io/sdras/full/YWBdQd&via=sarah_edo";
-      return ( <
-        div className = "winContainer"
+      return ( <div className = "winContainer"
         ref = "winContainer" >
-        <
-        div className = "overlay overlayWinning" > < /div> <
-        div className = "winning" >
-        <
-        h1 className = "winning-text" >
+        <div className = "overlay overlayWinning" > < /div> 
+        <div className = "winning" >
+        <h1 className = "winning-text" >
         Congrats!
-        <
-        /h1> <
-        div className = "winning-text" >
-        You got to eat tacos and nobody changed your plans!Super. < /div> <
-        div className = "twitter" >
-        <
-        a href = {
+        </h1> 
+        <div className = "winning-text" >
+        You got to eat tacos and nobody changed your plans!Super. < /div> 
+        <div className = "twitter" >
+        <a href = {
           twitterURL
         }
         target = "_blank" > Tweet your score! < svg xmlns = "http://www.w3.org/2000/svg"
@@ -650,15 +639,13 @@ fill = "#000" / > </svg>
         height = "25"
         viewBox = "0 0 32 32" > < path fill = "#00ffff"
         d = "M32 7.075c-1.175.525-2.444.875-3.77 1.03 1.357-.812 2.395-2.1 2.888-3.63-1.27.75-2.675 1.3-4.17 1.594C25.75 4.793 24.044 4 22.156 4c-3.625 0-6.563 2.938-6.563 6.563 0 .512.056 1.012.17 1.494C10.304 11.782 5.466 9.17 2.23 5.195c-.563.97-.887 2.1-.887 3.3 0 2.275 1.156 4.287 2.92 5.463-1.076-.03-2.088-.33-2.976-.82v.082c0 3.18 2.263 5.838 5.27 6.437-.55.15-1.132.23-1.732.23-.425 0-.83-.043-1.237-.118.838 2.605 3.263 4.505 6.13 4.562-2.25 1.762-5.074 2.813-8.155 2.813-.53 0-1.05-.03-1.57-.094C2.908 28.92 6.357 30 10.064 30c12.075 0 18.68-10.005 18.68-18.68 0-.287-.005-.57-.018-.85 1.28-.92 2.394-2.075 3.275-3.394z" / > < /svg></a >
-        <
-        /div> <
-        div className = "award" > < /div> <
-        button className = "start"
+        </div> 
+        <div className = "award" > < /div> 
+        <button className = "start"
         onClick = {
           this._handleRestartClick
-        } > Play again! < /button> <
-        /div> <
-        /div>
+        } > Play again! </button> 
+        </div> </div>
       )
     }
   });
