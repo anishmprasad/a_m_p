@@ -634,13 +634,13 @@ fill = "#000" / > </svg>
         <a href = {
           twitterURL
         }
-        target = "_blank" > Tweet your score! < svg xmlns = "http://www.w3.org/2000/svg"
+        target = "_blank" > Tweet your score! <svg xmlns = "http://www.w3.org/2000/svg"
         width = "25"
         height = "25"
-        viewBox = "0 0 32 32" > < path fill = "#00ffff"
-        d = "M32 7.075c-1.175.525-2.444.875-3.77 1.03 1.357-.812 2.395-2.1 2.888-3.63-1.27.75-2.675 1.3-4.17 1.594C25.75 4.793 24.044 4 22.156 4c-3.625 0-6.563 2.938-6.563 6.563 0 .512.056 1.012.17 1.494C10.304 11.782 5.466 9.17 2.23 5.195c-.563.97-.887 2.1-.887 3.3 0 2.275 1.156 4.287 2.92 5.463-1.076-.03-2.088-.33-2.976-.82v.082c0 3.18 2.263 5.838 5.27 6.437-.55.15-1.132.23-1.732.23-.425 0-.83-.043-1.237-.118.838 2.605 3.263 4.505 6.13 4.562-2.25 1.762-5.074 2.813-8.155 2.813-.53 0-1.05-.03-1.57-.094C2.908 28.92 6.357 30 10.064 30c12.075 0 18.68-10.005 18.68-18.68 0-.287-.005-.57-.018-.85 1.28-.92 2.394-2.075 3.275-3.394z" / > < /svg></a >
+        viewBox = "0 0 32 32" > <path fill = "#00ffff"
+        d = "M32 7.075c-1.175.525-2.444.875-3.77 1.03 1.357-.812 2.395-2.1 2.888-3.63-1.27.75-2.675 1.3-4.17 1.594C25.75 4.793 24.044 4 22.156 4c-3.625 0-6.563 2.938-6.563 6.563 0 .512.056 1.012.17 1.494C10.304 11.782 5.466 9.17 2.23 5.195c-.563.97-.887 2.1-.887 3.3 0 2.275 1.156 4.287 2.92 5.463-1.076-.03-2.088-.33-2.976-.82v.082c0 3.18 2.263 5.838 5.27 6.437-.55.15-1.132.23-1.732.23-.425 0-.83-.043-1.237-.118.838 2.605 3.263 4.505 6.13 4.562-2.25 1.762-5.074 2.813-8.155 2.813-.53 0-1.05-.03-1.57-.094C2.908 28.92 6.357 30 10.064 30c12.075 0 18.68-10.005 18.68-18.68 0-.287-.005-.57-.018-.85 1.28-.92 2.394-2.075 3.275-3.394z" / > </svg></a >
         </div> 
-        <div className = "award" > < /div> 
+        <div className = "award" > </div> 
         <button className = "start"
         onClick = {
           this._handleRestartClick
@@ -685,28 +685,23 @@ fill = "#000" / > </svg>
     },
 
     render() {
-      return ( <
-        div className = "loseContainer"
+      return ( <div className = "loseContainer"
         ref = "loseContainer" >
-        <
-        div className = "overlay overlayLosing" > < /div> <
+        <div className = "overlay overlayLosing" > < /div> <
         div className = "hangry" >
-        <
-        h1 className = "hangry-text" >
+        <h1 className = "hangry-text" >
         Aw Nuts!
-        <
-        /h1> <
-        div className = "hangry-text" >
+        </h1> 
+        <div className = "hangry-text" >
         You were overruled and didn 't get to eat any tacos. Sounds like you'
-        re going to a movie you already saw instead. <
-        /div> <
-        div className = "hangry-svg" > < /div> <
-        button className = "start"
+        re going to a movie you already saw instead. 
+        </div> 
+        <div className = "hangry-svg" > 
+        </div> 
+        <button className = "start"
         onClick = {
           this._handleRestartClick
-        } > Play again! < /button> <
-        /div> <
-        /div>
+        } > Play again! </button> </div> </div>
       )
     }
   });
