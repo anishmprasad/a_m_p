@@ -2,10 +2,6 @@
 
 A + M + P = Anish M Prasad
 
-# a_m_p
-
-A + M + P = Anish M Prasad
-
 ## Built With
 
 * [React](https://https://reactjs.org/) - A JavaScript library
