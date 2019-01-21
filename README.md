@@ -5,6 +5,7 @@ A + M + P = Anish M Prasad
 ## Built With
 
 * [React](https://https://reactjs.org/) - A JavaScript library
+* Redux-Saga
 
 ## Author
 
