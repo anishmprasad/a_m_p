@@ -6,6 +6,7 @@ A + M + P = Anish M Prasad
 
 * [React](https://https://reactjs.org/) - A JavaScript library
 * Redux-Saga
+* Redux
 
 ## Author
 
