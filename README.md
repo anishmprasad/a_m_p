@@ -7,6 +7,7 @@ A + M + P = Anish M Prasad
 * [React](https://https://reactjs.org/) - A JavaScript library
 * [Redux-Saga](https://github.com/redux-saga/redux-saga) -  An alternative side effect model for Redux apps
 * [Redux](https://redux.js.org/) - A predictable state container for JavaScript apps.
+*React Router
 
 ## Author
 
