@@ -1,3 +1,3 @@
-//DEO General actions
+// Project graph actions
 export const CANVAS_DATA = 'CANVAS_DATA';
 export const IS_PROJECT_CHANGED = 'IS_PROJECT_CHANGED';
