@@ -1,3 +1,3 @@
-// General actions
+// Opensource actions
 export const REQUEST_OPENSOURCE = 'REQUEST_OPENSOURCE';
 export const RECEIVE_OPENSOURCE = 'RECEIVE_OPENSOURCE';
