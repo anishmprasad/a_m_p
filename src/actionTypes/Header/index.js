@@ -1,3 +1,3 @@
-// General actions
+// Header actions
 export const RECEIVE_INITIALFETCH = 'RECEIVE_INITIALFETCH';
 export const REQUEST_INITIALFETCH = 'REQUEST_INITIALFETCH';
