@@ -2,12 +2,7 @@
 
 // https://spreadsheets.google.com/feeds/list/1vsuEOL0F6UdHU75kbm36XAvIQlVu-mgcnNhn0pI72Rg/1/public/values?alt=json
 
-// import axios from 'axios';
-// import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../actionTypes/graph';
 import { REQUEST_INITIALFETCH, RECEIVE_INITIALFETCH } from '../../actionTypes/Header';
-// import { gsdata } from '../../Utils';
-
-// import { createActionWithTypeAndPayload } from '../ActionTemplates';
 
 export function requestInitialFetch(payload) {
 	return { type: REQUEST_INITIALFETCH, payload };
