@@ -1,4 +1,3 @@
-// import { CANVAS_DATA, IS_PROJECT_CHANGED } from '../actionTypes/graph';
 import { REQUEST_OPENSOURCE, RECEIVE_OPENSOURCE } from '../../actionTypes/OpenSource';
 
 // import { createActionWithTypeAndPayload } from '../ActionTemplates';
