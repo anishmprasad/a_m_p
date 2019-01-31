@@ -4,11 +4,7 @@ import { connect } from 'react-redux';
 import { requestInitialFetch } from '../../actions/Header';
 import Nav from '../Nav';
 import { withRouter } from 'react-router';
-
-// import { CSSTransition } from 'react-transition-group';
 import './index.scss';
-
-// import logo from 'images/logo.svg';
 
 class Header extends Component {
 	componentWillMount() {
