@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './index.scss';
 
 export default class Home extends Component {
-	componentDidMount() {}
 	render() {
 		return (
 			<div className='home'>
