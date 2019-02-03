@@ -92,7 +92,7 @@ export default class App extends Component {
 		return (
 			<div>
 				<div className='logo'>
-					<img src='http://i68.tinypic.com/iod6yh.png' />
+					<img src='http://i68.tinypic.com/iod6yh.png' alt='logo' />
 				</div>
 				<div className='config'>
 					<div className='control-wrap'>
