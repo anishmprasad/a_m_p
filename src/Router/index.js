@@ -13,6 +13,7 @@ const Container = lazy(() => import(/* webpackChunkName: "Container" */ '../comp
 const OpenSourceProject = lazy(() =>
 	import(/* webpackChunkName: "OpenSourceProject" */ '../containers/OpenSourceProject')
 );
+const Lab = lazy(() => import(/* webpackChunkName: "Lab" */ '../components/Lab'));
 
 export default function Router() {
 	return (
@@ -26,6 +27,7 @@ export default function Router() {
 						<Route exact path='/opensource/:project' render={() => <OpenSourceProject />} />
 						<Route exact path='/about' render={() => <About />} />
 						<Route exact path='/animatedtransition' render={() => <AnimatedTransition />} />
+						<Route exact path='/lab' render={() => <Lab />} />
 					</Switch>
 				</Container>
 			</Suspense>
