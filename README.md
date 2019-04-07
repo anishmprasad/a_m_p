@@ -8,6 +8,7 @@ A + M + P = Anish M Prasad
 * [Redux-Saga](https://github.com/redux-saga/redux-saga) -  An alternative side effect model for Redux apps
 * [Redux](https://redux.js.org/) - A predictable state container for JavaScript apps.
 * [React Router](https://github.com/ReactTraining/react-router) - Declarative routing for React
+* [Webpack](https://webpack.js.org/) - Module bundler
 
 ## Author
 
@@ -15,10 +16,28 @@ A + M + P = Anish M Prasad
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/a_m_p/blob/master/README.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/a_m_p/blob/master/README.md) file for details.
 
 **In the words of Martin Luther King Junior:**
 > Hate cannot drive out hate; only love can do that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
