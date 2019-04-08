@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/Ghost/Documents/a_m_p/src/containers/Projects/Graph/index.scss"],"names":[],"mappings":"AAAA,OACC,iBAAkB,CAClB,AAED,0BAEC,iBAAkB,CAClB","file":"16.00c3b57f.chunk.css","sourcesContent":[".graph {\n\tposition: relative;\n}\n\n.description,\n.graph-title {\n\ttext-align: center;\n}\n"]}

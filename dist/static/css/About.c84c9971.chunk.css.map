@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/Ghost/Documents/a_m_p/src/components/About/index.scss"],"names":[],"mappings":"AAAA,OACI,eAAe,AACf,kBAAkB,AAClB,kBAAkB,AAClB,QAAQ,AACR,SAAU,CACb","file":"About.c84c9971.chunk.css","sourcesContent":[".about{\n    font-size: 30px;\n    text-align: center;\n    position: absolute;\n    top: 45%;\n    right: 45%;\n}"]}
