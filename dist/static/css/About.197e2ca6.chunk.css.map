@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/Ghost/Documents/a_m_p_development/src/components/About/index.scss"],"names":[],"mappings":"AAAA,OACI,cAAA,CACA,iBAAA,CACA,iBAAA,CACA,OAAA,CACA,SAAU","file":"About.197e2ca6.chunk.css","sourcesContent":[".about{\n    font-size: 30px;\n    text-align: center;\n    position: absolute;\n    top: 45%;\n    right: 45%;\n}"]}
