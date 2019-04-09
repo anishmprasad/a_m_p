@@ -1,6 +1,6 @@
 {
 	"name": "a_m_p",
-	"version": "0.1.0",
+	"version": "1.0.1",
 	"private": true,
 	"dependencies": {
 		"@babel/core": "7.1.0",
@@ -48,7 +48,7 @@
 		"react-circular-graph": "^1.0.6",
 		"react-dev-utils": "^6.1.1",
 		"react-dom": "^16.6.3",
-		"react-imgr": "^1.0.4",
+		"react-imgr": "^1.1.0",
 		"react-redux": "^5.1.1",
 		"react-router-dom": "^4.3.1",
 		"react-snapshot": "^1.3.0",
@@ -65,7 +65,8 @@
 		"webpack": "4.19.1",
 		"webpack-dev-server": "3.1.11",
 		"webpack-manifest-plugin": "2.0.4",
-		"workbox-webpack-plugin": "3.6.3"
+		"workbox-webpack-plugin": "3.6.3",
+		"netslider": "^1.2.3"
 	},
 	"scripts": {
 		"start": "node scripts/start.js",
