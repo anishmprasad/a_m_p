@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/Ghost/Documents/a_m_p_development/src/containers/Projects/NetSliderContainer/index.scss"],"names":[],"mappings":"AAAA,uBAEE,gCAAyB,CAAzB,wBAAyB","file":"NetSlider.7d0902f2.chunk.css","sourcesContent":[".netslider-container {\n\t* {\n\t\ttransition: all 0s linear;\n\t}\n}\n"]}
