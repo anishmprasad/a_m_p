@@ -16,7 +16,7 @@ A + M + P = Anish M Prasad
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE.md](https://github.com/Anishmprasad/a_m_p/blob/master/README.md) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE.md](https://github.com/anishmprasad/a_m_p/blob/master/LICENSE) file for details.
 
 
 
