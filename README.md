@@ -1,4 +1,4 @@
-# a_m_p
+# A + M + P
 
 A + M + P = Anish M Prasad
 
