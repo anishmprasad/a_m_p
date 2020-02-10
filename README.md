@@ -2,6 +2,11 @@
 
 A + M + P = Anish M Prasad
 
+## Technology
+
+- React
+- Redux
+
 ## Author
 
 - Anish M Prasad (anishmprasad@gmail.com)
