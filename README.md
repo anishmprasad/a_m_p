@@ -2,7 +2,7 @@
 
 A + M + P = Anish M Prasad
 
-## Technology
+## Technology used
 
 - React
 - Redux
