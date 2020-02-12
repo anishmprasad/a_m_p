@@ -6,6 +6,12 @@ A + M + P = Anish M Prasad
 
 - React
 - Redux
+- Redux-saga
+- React-router
+- vis-react
+- netslider
+- React-imgr
+
 
 ## Author
 
