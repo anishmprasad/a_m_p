@@ -11,6 +11,7 @@ A + M + P = Anish M Prasad
 - vis-react
 - netslider
 - React-imgr
+- Circular-graph
 
 
 ## Author
