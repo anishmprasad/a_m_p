@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{383:function(e,n,t){"use strict";t.r(n),t.d(n,"default",function(){return l});var a=t(0),c=t.n(a);function l(e){return c.a.createElement("div",{className:"lab"},c.a.createElement("h3",null,"welcome to my lab"))}}}]);
-//# sourceMappingURL=Lab.737b3e75.chunk.js.map
