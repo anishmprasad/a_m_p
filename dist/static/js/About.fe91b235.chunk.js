@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{110:function(n,e,t){},135:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return r}));var o=t(0),a=t.n(o);t(110);class r extends o.Component{render(){return a.a.createElement("div",{className:"about"},"About Me ! No way ;)")}}}}]);
+//# sourceMappingURL=About.fe91b235.chunk.js.map
