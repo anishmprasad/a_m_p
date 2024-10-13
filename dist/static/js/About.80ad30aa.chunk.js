@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{113:function(n,e,t){},138:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return r}));var o=t(0),a=t.n(o);t(113);class r extends o.Component{render(){return a.a.createElement("div",{className:"about"},"About Me ! No way ;)")}}}}]);
